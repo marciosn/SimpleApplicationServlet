@@ -162,6 +162,18 @@ a:hover {
 	cursor: pointer;
 	-webkit-font-smoothing: antialiased;
 }
+.bl-icon2 {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+}
+
 
 .bl-icon:before {
 	display: block;

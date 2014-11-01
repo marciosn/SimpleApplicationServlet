@@ -97,6 +97,7 @@
 						
 					</div><!-- /bl-content -->
 					<span class="bl-icon bl-icon-close">
+					 <img alt="close" src="./resources/bootstrap/images/close.png">
 					</span>
 				</section>
 				
@@ -116,26 +117,28 @@
 						<div class="row-fluid">
 							<div class="span4">
 								<ul id="bl-work-items" style="list-style: none;">
-									<li data-panel="panel-1"><a href="#"><img src="../images/project1.jpg" /></a></li>
+									<li data-panel="panel-1"><a href="#"><img src="./resources/bootstrap/images/project1.jpg" /></a></li>
 								</ul>
 								<p>Project Number 1</p>							
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="bl-work-items">
-									<li data-panel="panel-2"><a href="#"><img src="../images/project2.jpg" /></a></li>
+									<li data-panel="panel-2"><a href="#"><img src="./resources/bootstrap/images/project2.jpg" /></a></li>
 								</ul>
 								<p>Project Number 2</p>							
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="bl-work-items">
-									<li data-panel="panel-3"><a href="#"><img src="../images/project3.jpg" /></a></li>
+									<li data-panel="panel-3"><a href="#"><img src="./resources/bootstrap/images/project3.jpg" /></a></li>
 								</ul>
 								<p>Project Number 3</p>							
 							</div><!-- /span4 -->
 
 						</div><!-- /row-fluid -->
 					</div><!-- /bl-content -->
-					<span class="bl-icon bl-icon-close"></span>
+					<span class="bl-icon bl-icon-close">
+					<img alt="close" src="./resources/bootstrap/images/close.png">
+					</span>
 				</section>
 				
 				
@@ -151,7 +154,7 @@
 								<h2>Latest Blog Entry</h2>
 								<article>
 									<h3>Expanding Your Horizons</h3>
-									<img src="../images/blogentry.jpg" alt="">
+									<img src="./resources/bootstrap/images/blogentry.jpg" alt="">
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="#">Read more</a></p>
 								</article>
@@ -173,7 +176,9 @@
 							</div><!-- /span12 -->
 						</div><!-- /row-fluid -->
 					</div><!-- /bl-content -->
-					<span class="bl-icon bl-icon-close"></span>
+					<span class="bl-icon bl-icon-close">
+					<img alt="close" src="./resources/bootstrap/images/close.png">
+					</span>
 				</section>
 				
 				
@@ -208,7 +213,9 @@
 							
 						</div>
 					</div>
-					<span class="bl-icon bl-icon-close"></span>
+					<span class="bl-icon bl-icon-close">
+					<img alt="close" src="./resources/bootstrap/images/close.png">
+					</span>
 				</section>
 				
 				
@@ -219,7 +226,7 @@
 					<div data-panel="panel-1">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-								<img src="../images/project1.jpg" />
+								<img src="./resources/bootstrap/images/project1.jpg" />
 								<br>
 								<br>
 								<h4>Project Overview</h4>
@@ -233,7 +240,7 @@
 					<div data-panel="panel-2">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="../images/project2.jpg" />
+							<img src="./resources/bootstrap/images/project2.jpg" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -247,7 +254,7 @@
 					<div data-panel="panel-3">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="../images/project3.jpg" />
+							<img src="./resources/bootstrap/images/project3.jpg" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -260,8 +267,9 @@
 					
 					<nav>
 						<span class="bl-next-work">&gt; Next Project</span>
-						<span class="bl-icon"><i class="icon-remove"></i></span>
-						
+						<span class="bl-icon2 bl-icon-close">
+							<img alt="close" src="./resources/bootstrap/images/close.png">
+						</span>
 					</nav>
 				</div><!-- /panel-items -->
 				
