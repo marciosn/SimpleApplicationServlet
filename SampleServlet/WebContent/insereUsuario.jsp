@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,28 +15,51 @@
 <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
 <script src="./resources/bootstrap/js/bootstrap.js"></script>
 <script src="./resources/jquery/jquery-2.1.1.min.js"></script>
+<script src="./resources/jquery/jquery-ui.js"></script>
+<script src="./resources/jquery/jquery-ui.min.js"></script>
+<script src="./resources/jquery/jput.min.js"></script>
+
+
+<!-- <script type="text/javascript">
+$(document).ready(function(){
+		$.ajax({
+			url:'CadastraUsuario',
+			type:'POST',
+			dataType:'json',
+			success: function(data) {
+				/* $("#tbody").jPut({
+				    jsonData:data,
+				    //ajax_url:"youfile.json",  if you want to call from a json file
+				    name:"tbody_template",
+				}); */
+
+				});
+				
+			}
+				   
+		});  	
+		
+	});
+</script> -->
 
 <script type="text/javascript">
 $(document).ready(function(){
-	  $("#lista").click(function(){
-	  $.ajax({
-	   type : "POST",
-	   url : "CadastraUsuario",
-	   success: function(response){
-	    $("#id").val(response.id);
-	    $("#nome").val(response.nome);
-	    $("#senha").val(response.senha);
-	    $("#email").val(response.email);
-	    },
-	    
-	   error : function(){
-		   $().toastmessage('Falhouuuuuuuuuu');
-	    }
-	   
-	   });
-	  });
-	 });
+$.ajax({
+	  url: 'CadastraUsuario',
+	  type: 'post',
+	  dataType:'json',
+	  success: function( data ) {
+	    $( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
+	    $("#tbody").jPut({
+	        jsonData:data,
+	        //ajax_url:"youfile.json",  if you want to call from a json file
+	        name:"tbody_template",
+	    });
+	  }
+	});
+});  
 </script>
+
 </head>
 <body>
 <jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
@@ -49,13 +72,25 @@ $(document).ready(function(){
         <button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
 	</form>
 	
-	<form action="CadastraUsuario" method="post"><button class="btn btn-large btn-primary" type="submit">Testar JSON</button></form>
-	
 	</div>
 	
 	<div class="span6">
 	<h2><caption>Tabela de Usuários</caption></h2>
-	<table class="table table-bordered">
+	
+	<div jput="tbody_template">
+ 	<tr>
+  	<td>{{id}}</td>
+	<td>{{nome}}</td>
+	<td>{{senha}}</td>
+ 	</tr>
+	</div>
+
+	<table>
+ 	<tbody id="tbody">
+ 	</tbody>
+	</table>
+	
+	<!-- <table class="table table-bordered" id="my-ajax-table">
   		<thead>
     		<tr>
       		<th>id</th>
@@ -70,13 +105,7 @@ $(document).ready(function(){
       		<td>...</td>
     		</tr>
   		</tbody>
-	</table>
-	
-	Usuario ID: <input type="text" id="id"></input><br/>
-	Usuario NOME: <input type="text" id="nome"></input><br/>
-	Usuario SENHA: <input type="text" id="senha"></input><br/>
-	Usuario EMAIL: <input type="text" id="email"></input><br/>
-	
+	</table> -->	
 	<input type="button" id="lista" value="GET VALUE"></input>
 	
 	</div>
