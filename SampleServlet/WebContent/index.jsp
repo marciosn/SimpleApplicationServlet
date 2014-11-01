@@ -7,9 +7,7 @@
 <title>Estudando Servlets e JSP</title>
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.min.css" />
-
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 
 <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
@@ -21,18 +19,10 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<div class="container">
+	<div class="containerMarcio">
 	
-	<div class="hero-unit">
-		<h1>PEGANDO CONTEXTO DA APLICACÃO</h1>
-
-		<p>
-			 Usuário logado é:  ${username}</br>
-			 
-		</p>
+	testando
+	
 	</div>
-	
-</div>
-<jsp:include page="./WEB-INF/templates/footer.jsp" />
 </body>
 </html>
