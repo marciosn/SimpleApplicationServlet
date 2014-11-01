@@ -8,3 +8,9 @@ body{
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.cube{
+	padding-top: 50px;
+}
+.close{
+	background: url('../images/close.png') no-repeat;
+}

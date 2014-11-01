@@ -71,7 +71,7 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('./images/back2.jpg') no-repeat; 
+	background: url('../images/back2.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -157,6 +157,8 @@ a:hover {
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+	padding-top: 30px;
+	padding-right: 30px;
 	cursor: pointer;
 	-webkit-font-smoothing: antialiased;
 }

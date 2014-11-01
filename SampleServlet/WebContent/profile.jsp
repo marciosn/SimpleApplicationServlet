@@ -19,18 +19,6 @@
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<script type="text/javascript" src="./resources/bootstrap/js/modernizr.custom.js"></script>
 	<script src="./resources/jquery/jquery-1.8.2.min.js"></script>
-    
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png">
-
 
   </head>
 
@@ -44,11 +32,12 @@
 			<!--=========== ABOUT SECTION ===========-->
 				<section>
 					<div class="bl-box">
-						<h2 >Hi My Name is Mike</h2> <!-- class="bl-icon bl-icon-about" -->
+						<h2 >The Walking Dead</h2> <!-- class="bl-icon bl-icon-about" -->
 					</div><!-- /bl-box -->
 					<div class="bl-content">
 						<div class="row-fluid">
 							<div class="span12">
+							
 								<h2>A Little About Me</h2>
 								<p>I am a freelance web developer and web designer living in London, UK. I started freelancing in 2009 and have worked for a wide range of personal clients and agencies.</p>
 								<p>I offer a complete web solution to my clients. I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.</p>
@@ -107,7 +96,8 @@
 						</div><!-- /row-fluid -->
 						
 					</div><!-- /bl-content -->
-					<span class="bl-icon bl-icon-close"></span>
+					<span class="bl-icon bl-icon-close">
+					</span>
 				</section>
 				
 				
@@ -115,7 +105,7 @@
 			<!--=========== PORTFOLIO SECTION ===========-->
 				<section id="bl-work-section">
 					<div class="bl-box">
-						<h2 >Latests Works</h2> <!-- class="bl-icon bl-icon-works"-->
+						<h2 >Season 6</h2> <!-- class="bl-icon bl-icon-works"-->
 					</div>
 					<div class="bl-content">
 						<h2>Some Recent Projects</h2>
@@ -126,19 +116,19 @@
 						<div class="row-fluid">
 							<div class="span4">
 								<ul id="bl-work-items" style="list-style: none;">
-									<li data-panel="panel-1"><a href="#"><img src="images/project1.jpg" /></a></li>
+									<li data-panel="panel-1"><a href="#"><img src="../images/project1.jpg" /></a></li>
 								</ul>
 								<p>Project Number 1</p>							
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="bl-work-items">
-									<li data-panel="panel-2"><a href="#"><img src="images/project2.jpg" /></a></li>
+									<li data-panel="panel-2"><a href="#"><img src="../images/project2.jpg" /></a></li>
 								</ul>
 								<p>Project Number 2</p>							
 							</div><!-- /span4 -->
 							<div class="span4">
 								<ul id="bl-work-items">
-									<li data-panel="panel-3"><a href="#"><img src="images/project3.jpg" /></a></li>
+									<li data-panel="panel-3"><a href="#"><img src="../images/project3.jpg" /></a></li>
 								</ul>
 								<p>Project Number 3</p>							
 							</div><!-- /span4 -->
@@ -153,7 +143,7 @@
 			<!--=========== BLOG SECTION ===========-->
 				<section>
 					<div class="bl-box">
-						<h2>My deepest thoughts</h2>
+						<h2>Is Coming</h2>
 					</div>
 					<div class="bl-content">
 						<div class="row-fluid">
@@ -161,7 +151,7 @@
 								<h2>Latest Blog Entry</h2>
 								<article>
 									<h3>Expanding Your Horizons</h3>
-									<img src="images/blogentry.jpg" alt="">
+									<img src="../images/blogentry.jpg" alt="">
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="#">Read more</a></p>
 								</article>
@@ -191,7 +181,7 @@
 			<!--=========== CONTACT SECTION ===========-->
 				<section>
 					<div class="bl-box">
-						<h2 >Contact Me</h2>
+						<h2 >In the AMC</h2>
 					</div>
 					<div class="bl-content">
 						<div class="row-fluid">
@@ -229,7 +219,7 @@
 					<div data-panel="panel-1">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-								<img src="images/project1.jpg" />
+								<img src="../images/project1.jpg" />
 								<br>
 								<br>
 								<h4>Project Overview</h4>
@@ -243,7 +233,7 @@
 					<div data-panel="panel-2">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="images/project2.jpg" />
+							<img src="../images/project2.jpg" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -257,7 +247,7 @@
 					<div data-panel="panel-3">
 						<div class="row-fluid">
 							<div class="span8 offset2 tweak">
-							<img src="images/project3.jpg" />
+							<img src="../images/project3.jpg" />
 							<br>
 							<br>
 							<h4>Project Overview</h4>
@@ -270,7 +260,8 @@
 					
 					<nav>
 						<span class="bl-next-work">&gt; Next Project</span>
-						<span class="bl-icon bl-icon-close"></span>
+						<span class="bl-icon"><i class="icon-remove"></i></span>
+						
 					</nav>
 				</div><!-- /panel-items -->
 				
