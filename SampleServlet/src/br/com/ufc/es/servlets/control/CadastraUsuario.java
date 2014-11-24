@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -38,18 +39,20 @@ public class CadastraUsuario extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
 		username = request.getParameter("nome");
 		password = request.getParameter("senha");
 		email = request.getParameter("email");
 		
-		if(username != null && password != null && email != null){
+		if(username == "" || password == "" || email == ""){
+			request.setAttribute("erro", "Os campos são obrigatórios!");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("insereUsuario.jsp");
+			dispatcher.forward(request, response);
+		}else{
 			usuario = new Usuario(username, password, email);
 			persistiUsurio(usuario);
-			//response.sendRedirect("index.jsp");
+			response.sendRedirect("ListaPessoas.jsp");
 		}
-		/*else
-			response.sendRedirect("login.jsp");*/
-		
 		
 		System.out.println(username + " " + password + " " + email);
 	}
@@ -63,6 +66,7 @@ public class CadastraUsuario extends HttpServlet {
 		response.setContentType("application/json"); 
 		response.setCharacterEncoding("utf-8"); 
 		response.getWriter().write(dados);
+		//response.sendRedirect("ListaPessoas.jsp");
 	}
 	
 	public String ArrayToJSON(List<Usuario> usu){

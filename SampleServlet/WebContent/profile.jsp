@@ -38,34 +38,10 @@
 						<div class="row-fluid">
 							<div class="span12">
 							
-								<h2>A Little About Me</h2>
-								<p>I am a freelance web developer and web designer living in London, UK. I started freelancing in 2009 and have worked for a wide range of personal clients and agencies.</p>
-								<p>I offer a complete web solution to my clients. I can guide you through the early stages of project planning and research, help you with information architecture and user experience, design your website, and finally build the site for you.</p>
-								<p></p>
-								<p></p>
-								<p></p>
-								<p></p>
+								<h2>Titulo</h2>
+								
 								<div class="row-fluid">
-									<div class="span8">
-									<h2>My Skills</h2>
-									    <!-- Progress Bar --> 
-										<div class="progress">
-										<div class="bar" style="width: 73%;">HTML/CSS 73%</div>
-										</div>  
-										<div class="progress">
-										<div class="bar" style="width: 100%;">Web Design 100%</div>
-										</div>  
-										<div class="progress">
-										<div class="bar" style="width: 78%;">Photography 78%</div>
-										</div>  
-										<div class="progress">
-										<div class="bar" style="width: 80%;">Sound Design 80%</div>
-										</div>  
-										<div class="progress">
-										<div class="bar" style="width: 63%;">Party 63%</div>
-										</div> 
-										<!-- Progress Bar End --> 
-									</div><!-- /span6 -->
+									
 									<div class="span4"></div>
 									<div class="span12">
 										<br>
@@ -73,22 +49,7 @@
 									</div>
 									<div class="span12">
 										<div class="row about-us">
-											<div class="span3">
-											<h3><i class="icon-user icon-white"></i> More About Me?</h3>
-											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>
-											<div class="span3">
-											<h3><i class="icon-heart icon-white"></i> What I Love</h3>
-											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>
-											<div class="span3">
-											<h3><i class="icon-fire icon-white"></i> Work Hard</h3>
-											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>   
-											<div class="span3">
-											<h3><i class="icon-plane icon-white"></i> Ready To Go</h3>
-											Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>   
+											conteudo  
 										</div><!-- /row-about-us -->  
 									</div><!-- /span12 -->
 								</div><!-- /row -->
@@ -110,8 +71,8 @@
 					</div>
 					<div class="bl-content">
 						<h2>Some Recent Projects</h2>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-						<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+						<p></p>
+						<p></p>
 						<p></p>
 						<p></p>
 						<div class="row-fluid">
@@ -151,27 +112,11 @@
 					<div class="bl-content">
 						<div class="row-fluid">
 							<div class="span12">
-								<h2>Latest Blog Entry</h2>
+								<h2>Titulo</h2>
 								<article>
-									<h3>Expanding Your Horizons</h3>
-									<img src="./resources/bootstrap/images/blogentry.jpg" alt="">
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<a href="#">Read more</a></p>
+									conteudo
 								</article>
-								<hr>
-								<h2>Other Entries</h2>
-								<article>
-									<h3>Blog Post 1</h3>
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
-								</article>
-								<article>
-									<h3>Blog Post 2</h3>
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
-								</article>
-								<article>
-									<h3>Blog Post 3</h3>
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text.... <a href="#">Read more</a></p>
-								</article>
+								
 								
 							</div><!-- /span12 -->
 						</div><!-- /row-fluid -->
@@ -191,9 +136,9 @@
 					<div class="bl-content">
 						<div class="row-fluid">
 							<div class="span12">
-								<h2>Get in touch</h2>
+								<h2>Titulo</h2>
 								<br>
-								<p>I am available for freelance jobs. Please contact me and send me your questions and inquiries.</p>								
+								<p></p>								
 							
 							<p>
 								<p>your@email.com | +34 600669933 | Madrid, Spain</p>

@@ -16,31 +16,9 @@
 <script src="./resources/jquery/jquery-ui.js"></script>
 <script src="./resources/jquery/jquery-ui.min.js"></script>
 <script src="./resources/jquery/jput.min.js"></script>
-
+<script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
 
 <!-- <script type="text/javascript">
-$(document).ready(function(){
-		$.ajax({
-			url:'CadastraUsuario',
-			type:'POST',
-			dataType:'json',
-			success: function(data) {
-				/* $("#tbody").jPut({
-				    jsonData:data,
-				    //ajax_url:"youfile.json",  if you want to call from a json file
-				    name:"tbody_template",
-				}); */
-
-				});
-				
-			}
-				   
-		});  	
-		
-	});
-</script> -->
-
-<script type="text/javascript">
 	$(document).ready(function() {
 		$.ajax({
 			url : 'CadastraUsuario',
@@ -54,74 +32,74 @@ $(document).ready(function(){
 			}
 		});
 	});
+</script> -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#inserir').submit(function(){
+        return true; //false is default
+    });
+    
+    $('#password').pStrength({
+        'changeBackground'          : false,
+        'onPasswordStrengthChanged' : function(passwordStrength, strengthPercentage) {
+            if ($(this).val()) {
+                $.fn.pStrength('changeBackground', this, passwordStrength);
+            } else {
+                $.fn.pStrength('resetStyle', this);
+            }
+            $('#' + $(this).data('display')).html('Sua força da senha é ' + strengthPercentage + '%');
+        },
+        'onValidatePassword': function(strengthPercentage) {
+            $('#' + $(this).data('display')).html($('#' + $(this).data('display')).html() + ' Ótimo, agora você pode continuar a registar-se!');
+            
+            $('#inserir').submit(function(){
+                //alert("vai alterar o valor para true");
+                return true;
+            });
+        }
+    });
+});
 </script>
 
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<div class="containerMarcio span5 form">
+	<div class="containerMarcio span6 form">
 		<h2>
 			<caption>Cadastrar Usuário</caption>
 		</h2>
+		<caption>
+		<p>${requestScope.erro}</p>
+		</caption>
 		<form action="CadastraUsuario" method="get" id="inserir">
-			<input type="text" class="input-block-level" placeholder="Username"
-				name="nome" id="username"> <input type="text"
-				class="input-block-level" placeholder="Email" name="email" id="mail">
-			<input type="password" class="input-block-level"
-				placeholder="Password" name="senha" id="password">
-			<button class="btn btn-large btn-primary" type="submit" id="submit">Cadastrar</button>
+			<input type="text" class="input-block-level" placeholder="Username"	name="nome" id="username" size="30">
+			<span data-alertid="example"></span>
+			<input type="text" class="input-block-level" placeholder="Email" name="email" id="mail" size="40">
+			<input type="password" class="input-block-level left"placeholder="Password" name="senha" 
+			id="password" data-display="myDisplayElement1" size="40">
+			<div class="left" id="myDisplayElement1"></div>
+    		<div class="clear"></div>
+    		<br/>
+			<button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
 		</form>
-
-		<script type="text/javascript">
-			var form = $('#inserir');
-			form.submit(function() {
-
-				$.ajax({
-					type : form.attr('method'),
-					url : form.attr('action'),
-					data : form.serialize(),
-					success : function(data) {
-					}
-				});
-			});
-		</script>
 		
-		<h2>
+		<!-- <h2>
 			<caption>Tabela de Usuários</caption>
 		</h2>
 
 		<div jput="tbody_template">
 			<tr>
-				<td>{{nome}}</td>
+				<td>{{nome}} <br/></td>
 			</tr>
 		</div>
 
 		<table>
 			<tbody id="tbody">
 			</tbody>
-		</table>
+		</table> -->
 
 	</div>
-
-	<div class="">
-		
-
-		<!-- <table class="table table-bordered" id="my-ajax-table">
-  		<thead>
-    		<tr>
-      		<th>{{id}}</th>
-      		<th>{{nome}}</th>
-    		</tr>
-  		</thead>
-  		<tbody>
-    		<tr>
-      		<td>...</td>
-      		<td>...</td>
-      		<td>...</td>
-    		</tr>
-  		</tbody>
-	</table> -->
-	</div>
-
 </body>
+
 </html>

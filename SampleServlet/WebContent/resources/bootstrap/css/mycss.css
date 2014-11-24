@@ -14,3 +14,15 @@ body{
 .close{
 	background: url('../images/close.png') no-repeat;
 }
+#password{
+    padding:4px;
+    margin:2px;
+    border:solid 1px #999;
+}
+
+.left {
+    float:left;
+}
+.clear {
+    clear:both;
+}

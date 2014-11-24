@@ -2,6 +2,7 @@ package br.com.ufc.es.servlets.login;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,12 +40,15 @@ public class Login extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
-		if(username != null && password != null){
+		if(username == "" || password == ""){
+			request.setAttribute("erro", "Os campos são obrigatórios!");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
+			dispatcher.forward(request, response);
+		}else{
 			response.sendRedirect("index.jsp");
 			request.setAttribute("username", username);
 			getServletContext().setAttribute("username", username);
-		}else
-			response.sendRedirect("login.jsp");
+		}
 		
 		System.out.println(username);
 		System.out.println(password);

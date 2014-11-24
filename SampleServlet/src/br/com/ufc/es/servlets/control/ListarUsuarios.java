@@ -21,7 +21,8 @@ import br.com.ufc.es.servlets.models.Usuario;
 @WebServlet("/ListarUsuarios")
 public class ListarUsuarios extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private List<Usuario> usuarios;
+	private UsuarioJPADAO usuarioDAO = new UsuarioJPADAO();
+	private List<Usuario> usus = new ArrayList<Usuario>();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -35,45 +36,7 @@ public class ListarUsuarios extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*UsuarioJPADAO usuarioDAO = new UsuarioJPADAO();
-		List<Usuario> usuarios = usuarioDAO.find();
-		for(Usuario u: usuarios){
-			System.out.println("Nome: " + u.getNome());
-			System.out.println("Senha: " + u.getSenha());
-			System.out.println("Email: " + u.getNome());
-			System.out.println("=========================");
-		}
-		usuarioDAO.close();
-*/		
-		String nome = request.getParameter("nome");
-		System.out.println(nome);
-		String json = null;
-		json = new Gson().toJson(adicionarUsuariosNaLista(nome));
-		response.setContentType("application/json");
-	    response.setCharacterEncoding("UTF-8");
-	    response.getWriter().write(json);
-		
-	}
-	
-	public Usuario adicionarUsuariosNaLista(String nome){
-		Usuario usuario = null;
-		usuarios = new ArrayList<Usuario>();
-		usuarios.add(new Usuario("pedro", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("marcio", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("eduardo", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("jose", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("joao", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("karen", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("egila", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("paula", "123456", "usu@gmail.com"));
-		usuarios.add(new Usuario("natalia", "123456", "usu@gmail.com"));
-		
-		for(Usuario u : usuarios){
-			if(u.getNome().contains(nome)){
-				usuario = new Usuario(u.getNome(), u.getSenha(), u.getEmail());
-			}
-		}
-		return usuario;
+
 		
 	}
 
@@ -81,7 +44,40 @@ public class ListarUsuarios extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String dados = ArrayToJSON(listarDoBanco());
+		System.out.println(dados);
+		response.setContentType("application/json"); 
+		response.setCharacterEncoding("utf-8"); 
+		response.getWriter().write(dados);
+	}
+	
+	public String ArrayToJSON(List<Usuario> usu){
+		String usuarios;
+		Gson gson = new Gson();
+		usuarios = gson.toJson(usu);
+		return usuarios;
+		
+	}
+	
+	public void persistiUsurio(Usuario usuario){
+		try {
+			usuarioDAO.beginTransaction();
+			usuarioDAO.save(usuario);
+			usuarioDAO.commit();
+			
+		} catch (Exception e) {
+			usuarioDAO.rollback();
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		} finally{
+			usuarioDAO.close();
+		}
+		
+	}
+	public List<Usuario> listarDoBanco(){
+		usus = usuarioDAO.find();
+		return usus;
+		
 	}
 
 }

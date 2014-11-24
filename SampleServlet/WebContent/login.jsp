@@ -64,6 +64,8 @@
   <body>
 
     <div class="container">
+    
+    <p>${requestScope.erro}</p>
 
       <form class="form-signin" action="login" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>

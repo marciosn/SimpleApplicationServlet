@@ -14,6 +14,8 @@
 <script src="./resources/bootstrap/js/bootstrap.js"></script>
 <script src="./resources/jquery/jquery-2.1.1.min.js"></script>
 <script src="./resources/bootstrap/js/ajax.js"></script>
+
+
 <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
 
 </head>
@@ -23,6 +25,7 @@
 	
 	testando
 	
-	</div>
+	</div>	
+	
 </body>
 </html>
