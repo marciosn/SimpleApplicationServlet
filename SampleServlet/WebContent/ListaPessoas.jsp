@@ -25,33 +25,11 @@
 <!-- <script src="./resources/bootstrap/plugins/jquery.dataTables.js"></script> -->
 <script src="./resources/bootstrap/plugins/jquery.dataTables.min.js"></script>
 
-<!-- <script type="text/javascript">
-	$(document).ready(function() {
-		$.ajax({
-			url : 'ListarUsuarios',
-			type : 'post',
-			dataType : 'json',
-			success : function(data) {
-				$("#tbody").jPut({
-					jsonData : data,
-					name : "tbody_template",
-				});
-			}
-		});
-	});
-</script> -->
-
-<!-- <script type="text/javascript">
-$(document).ready(function() {
-    $('#usuarios').dataTable( {
-        "ajax": 'resources/ajax.txt'
-    } );
-} );
-</script> -->
 
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function() {
     $('#usuarios').dataTable( {
+    	 "processing": true,
         "ajax": {
             "url": "ListarUsuarios",
            "type" : "post",
