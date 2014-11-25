@@ -15,13 +15,14 @@
 <script src="./resources/jquery/jquery-2.1.1.min.js"></script>
 <script src="./resources/bootstrap/js/ajax.js"></script>
 
-
 <!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
 
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
 	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	
+	
 		
 </body>
 </html>

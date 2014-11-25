@@ -9,6 +9,7 @@
       <li><a href="./ListaPessoas.jsp">Listar</a></li>
       <li><a href="./login.jsp">Login</a></li>
       <li><a href="./loginOld.jsp">Login OLD</a></li>
+      <li><a href="./clock.jsp">Clock</a></li>
       <li><a href="#">${username}</a></li>
       
     </ul>
