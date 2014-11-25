@@ -21,11 +21,7 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<div class="containerMarcio">
-	
-	testando
-	
-	</div>	
-	
+	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+		
 </body>
 </html>

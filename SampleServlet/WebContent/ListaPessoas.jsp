@@ -8,7 +8,6 @@
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
-<!-- <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/datatable.css" /> -->
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.dataTables_themeroller.css" />
@@ -55,7 +54,6 @@ $(document).ready(function() {
 	<h2>
 		<caption>Tabela de Usuários</caption>
 	</h2>
-	
 		<table id="usuarios" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -77,25 +75,5 @@ $(document).ready(function() {
     </table>
 	
 	</div>
-	
-	
-<!-- 	<div class="containerMarcio form">
-		
-		<div jput="tbody_template">
-			<tr>
-				<td>{{nome}}</td>
-			</tr>
-			
-			<tr>
-				<td>{{email}}<br/></td>
-			</tr>
-		</div>
-
-		<table>
-			<tbody id="tbody">
-			</tbody>
-		</table>
-	</div> -->
-
 </body>
 </html>

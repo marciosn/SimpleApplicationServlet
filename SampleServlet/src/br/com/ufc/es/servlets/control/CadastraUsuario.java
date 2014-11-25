@@ -20,7 +20,7 @@ import br.com.ufc.es.servlets.models.Usuario;
  * Servlet implementation class CadastraUsuario
  */
 @WebServlet("/CadastraUsuario")
-public class CadastraUsuario extends HttpServlet {
+public class CadastraUsuario extends HttpServlet implements Runnable{
 	private static final long serialVersionUID = 1L;
 	private String username, password, email;
 	private Usuario usuario;
@@ -50,8 +50,10 @@ public class CadastraUsuario extends HttpServlet {
 			dispatcher.forward(request, response);
 		}else{
 			usuario = new Usuario(username, password, email);
-			persistiUsurio(usuario);
-			response.sendRedirect("ListaPessoas.jsp");
+			run();
+			//persistiUsurio(usuario);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("ListaPessoas.jsp");
+			dispatcher.forward(request, response);
 		}
 		
 		System.out.println(username + " " + password + " " + email);
@@ -61,20 +63,7 @@ public class CadastraUsuario extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String dados = ArrayToJSON(listarDoBanco());
-		System.out.println(dados);
-		response.setContentType("application/json"); 
-		response.setCharacterEncoding("utf-8"); 
-		response.getWriter().write(dados);
-		//response.sendRedirect("ListaPessoas.jsp");
-	}
-	
-	public String ArrayToJSON(List<Usuario> usu){
-		String usuarios;
-		Gson gson = new Gson();
-		usuarios = gson.toJson(usu);
-		return usuarios;
-		
+
 	}
 	
 	public void persistiUsurio(Usuario usuario){
@@ -86,15 +75,22 @@ public class CadastraUsuario extends HttpServlet {
 		} catch (Exception e) {
 			usuarioDAO.rollback();
 			e.printStackTrace();
-			System.out.println(e.getMessage());
-		} finally{
-			usuarioDAO.close();
+			System.out.println("Exception durante persistencia "+e.getMessage());
 		}
-		
 	}
-	public List<Usuario> listarDoBanco(){
-		usus = usuarioDAO.find();
-		return usus;
+
+	@Override
+	public void run() {
+		try {
+			usuarioDAO.beginTransaction();
+			usuarioDAO.save(this.usuario);
+			usuarioDAO.commit();
+			
+		} catch (Exception e) {
+			usuarioDAO.rollback();
+			e.printStackTrace();
+			System.out.println("Exception durante persistencia "+e.getMessage());
+		}
 		
 	}
 

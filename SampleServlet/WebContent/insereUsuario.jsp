@@ -18,21 +18,6 @@
 <script src="./resources/jquery/jput.min.js"></script>
 <script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
 
-<!-- <script type="text/javascript">
-	$(document).ready(function() {
-		$.ajax({
-			url : 'CadastraUsuario',
-			type : 'post',
-			dataType : 'json',
-			success : function(data) {
-				$("#tbody").jPut({
-					jsonData : data,
-					name : "tbody_template",
-				});
-			}
-		});
-	});
-</script> -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -84,21 +69,6 @@ $(document).ready(function(){
 			<button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
 		</form>
 		
-		<!-- <h2>
-			<caption>Tabela de Usuários</caption>
-		</h2>
-
-		<div jput="tbody_template">
-			<tr>
-				<td>{{nome}} <br/></td>
-			</tr>
-		</div>
-
-		<table>
-			<tbody id="tbody">
-			</tbody>
-		</table> -->
-
 	</div>
 </body>
 
