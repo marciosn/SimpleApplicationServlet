@@ -26,3 +26,9 @@ body{
 .clear {
     clear:both;
 }
+.esquerda{
+	padding-left: 15px;
+}
+.top{
+	padding-top: 50px;
+}

@@ -15,7 +15,6 @@
 <script src="./resources/jquery/jquery-2.1.1.min.js"></script>
 <script src="./resources/jquery/jquery-ui.js"></script>
 <script src="./resources/jquery/jquery-ui.min.js"></script>
-<script src="./resources/jquery/jput.min.js"></script>
 <script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
 
 
@@ -50,7 +49,8 @@ $(document).ready(function(){
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<div class="containerMarcio span6 form">
+	<%-- <div class="form top"><jsp:include page="./WEB-INF/templates/sidebar.jsp" /></div> --%>
+	<div class="span6 form">
 		<h2>
 			<caption>Cadastrar Usuário</caption>
 		</h2>

@@ -10,6 +10,7 @@
 		      <li><a href="./loginOld.jsp">Login OLD</a></li>
               <li class="nav-header">Sidebar</li>
               <li><a href="./clock.jsp">Clock</a></li>
+              <li><a href="./modal.jsp">Modal</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>

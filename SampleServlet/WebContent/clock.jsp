@@ -5,6 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Clock</title>
+
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.flipcountdown.css" />
 
 <script src="./resources/bootstrap/plugins/jquery.flipcountdown.js"></script>
@@ -12,16 +17,37 @@
 
 
 <script type="text/javascript">
-	jQuery(function(){
-	  jQuery('#flipcountdownbox1').flipcountdown();
+jQuery(function(){
+	  jQuery('#clock').flipcountdown();
 	})
+</script>
+
+<script>
+jQuery(function($){
+	$('#retroclockbox_lg').flipcountdown({size:'lg'});
+	$('#retroclockbox_md').flipcountdown({size:'md'});
+	$('#retroclockbox_sm').flipcountdown({size:'sm'});
+	$('#retroclockbox_xs').flipcountdown({size:'xs'});
+})
 </script>
 
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	<div class=""><jsp:include page="./WEB-INF/templates/sidebar.jsp" /></div>
 
-	<div id="flipcountdownbox1"></div>
+		<div><strong>lg</strong>-large</div>
+		<div id="retroclockbox_lg"></div>
+		<div><strong>md</strong>-middle, default</div>
+		<div id="retroclockbox_md"></div>
+		<div><strong>sm</strong>-small</div>
+		<div id="retroclockbox_sm"></div>
+		<div><strong>xs</strong>-Extra small</div>
+		<div id="retroclockbox_xs"></div>
+
+	<div class="">
+	<h2>Clock</h2>
+	<div id="clock"></div>
+	</div>
 </body>
 </html>
