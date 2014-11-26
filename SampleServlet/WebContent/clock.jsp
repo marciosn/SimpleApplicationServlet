@@ -15,13 +15,6 @@
 <script src="./resources/bootstrap/plugins/jquery.flipcountdown.js"></script>
 <script src="./resources/bootstrap/plugins/jquery.min.js"></script>
 
-
-<script type="text/javascript">
-jQuery(function(){
-	  jQuery('#clock').flipcountdown();
-	})
-</script>
-
 <script>
 jQuery(function($){
 	$('#retroclockbox_lg').flipcountdown({size:'lg'});
@@ -35,6 +28,8 @@ jQuery(function($){
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
 	<div class=""><jsp:include page="./WEB-INF/templates/sidebar.jsp" /></div>
+		
+		<h2>Clock</h2>
 
 		<div><strong>lg</strong>-large</div>
 		<div id="retroclockbox_lg"></div>
@@ -45,9 +40,5 @@ jQuery(function($){
 		<div><strong>xs</strong>-Extra small</div>
 		<div id="retroclockbox_xs"></div>
 
-	<div class="">
-	<h2>Clock</h2>
-	<div id="clock"></div>
-	</div>
 </body>
 </html>

@@ -1,0 +1,67 @@
+.drag{position:absolute; float:left; width:100px; height:100px; background:indigo; z-index:1}
+
+            #drop {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                background: #eee;
+                border: 1px solid #999;
+                margin: 0 auto;
+            }
+
+            #drop div {
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+
+            #drop .a {
+                border-right: 1px solid #ccc;
+                width: 99px;
+            }
+
+
+            #drop .c {
+                border-right: 1px solid #ccc;
+                width: 99px;
+                height: 99px;
+                border-top: 1px solid #ccc;
+            }
+
+            #drop .d {
+                border-top: 1px solid #ccc;
+                height: 99px;
+            }
+            
+            /* DROP 2 ==================================================================================================*/
+            
+             #drop2 {
+                width: 200px;
+                height: 200px;
+                position: relative;
+                background: red;
+                border: 1px solid #999;
+                margin: 0 auto;
+            }
+            
+            #drop2 div {
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            
+            #drop2 .e {
+                border-right: 1px solid #ccc;
+                width: 99px;
+            }
+            #drop2 .g {
+                border-right: 1px solid #ccc;
+                width: 99px;
+                height: 99px;
+                border-top: 1px solid #ccc;
+            }
+
+            #drop2 .h {
+                border-top: 1px solid #ccc;
+                height: 99px;
+            }
