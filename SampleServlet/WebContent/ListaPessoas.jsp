@@ -49,11 +49,15 @@ $(document).ready(function() {
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
 	
-	<div class="containerMarcio span12 form">
+	<div class="container-fluid form">
 	
-	<h2>
+		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	
+	<div class="span9">
+	
+	<!-- <h2>
 		<caption>Tabela de Usuários</caption>
-	</h2>
+	</h2> -->
 		<table id="usuarios" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
@@ -73,6 +77,8 @@ $(document).ready(function() {
             </tr>
         </tfoot>
     </table>
+	
+	</div>
 	
 	</div>
 </body>

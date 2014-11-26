@@ -27,7 +27,12 @@ jQuery(function($){
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<div class=""><jsp:include page="./WEB-INF/templates/sidebar.jsp" /></div>
+	
+	<div class="container-fluid">
+	
+		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+		
+		<div class="span9">
 		
 		<h2>Clock</h2>
 
@@ -39,6 +44,10 @@ jQuery(function($){
 		<div id="retroclockbox_sm"></div>
 		<div><strong>xs</strong>-Extra small</div>
 		<div id="retroclockbox_xs"></div>
+		
+		</div>
+		
+	</div>
 
 </body>
 </html>

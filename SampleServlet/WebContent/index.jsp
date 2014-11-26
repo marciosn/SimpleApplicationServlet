@@ -10,16 +10,23 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 
-<!-- <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="./resources/bootstrap/js/bootstrap.js"></script>
-<script src="./resources/jquery/jquery-2.1.1.min.js"></script>
-<script src="./resources/bootstrap/js/ajax.js"></script> -->
-
-<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
-
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	<div class="container-fluid">
+	
+		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+		
+		<div class="span9">
+		
+		<div class="hero-unit">
+            <h1>Hello, world!</h1>
+            <p></p>
+            <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+          </div>
+		
+		</div>
+		
+	</div>
 </body>
 </html>

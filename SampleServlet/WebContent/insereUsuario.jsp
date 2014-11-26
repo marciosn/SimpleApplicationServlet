@@ -49,8 +49,12 @@ $(document).ready(function(){
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<%-- <div class="form top"><jsp:include page="./WEB-INF/templates/sidebar.jsp" /></div> --%>
-	<div class="span6 form">
+	
+	<div class="container-fluid form">
+	
+	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	
+	<div class="span6">
 		<h2>
 			<caption>Cadastrar Usuário</caption>
 		</h2>
@@ -69,6 +73,8 @@ $(document).ready(function(){
 			<button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
 		</form>
 		
+	</div>
+	
 	</div>
 </body>
 

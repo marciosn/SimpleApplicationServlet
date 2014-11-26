@@ -17,9 +17,12 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
 	
-	<div class="remodal-bg containerMarcio span7">
+	<div class="container-fluid">
+	
+		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	
+	<div class="remodal-bg span7">
 		<h2>O conteúdo da página fica nesta div</h2>
 		
 		<p></p>
@@ -29,6 +32,8 @@
 		
 		<a href="#modal">Exibir modal.</a>
 		
+	</div>
+	
 	</div>
 	
 	<div class="remodal" data-remodal-id="modal">
