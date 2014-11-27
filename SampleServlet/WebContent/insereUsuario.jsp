@@ -17,7 +17,6 @@
 <script src="./resources/jquery/jquery-ui.min.js"></script>
 <script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
 
-
 <script type="text/javascript">
 $(document).ready(function(){
     $('#inserir').submit(function(){
@@ -61,7 +60,7 @@ $(document).ready(function(){
 		<caption>
 		<p>${requestScope.erro}</p>
 		</caption>
-		<form action="CadastraUsuario" method="get" id="inserir">
+		<form action="CadastraUsuario" method="post" id="inserir" class="validate">
 			<input type="text" class="input-block-level" placeholder="Username"	name="nome" id="username" size="30">
 			<span data-alertid="example"></span>
 			<input type="text" class="input-block-level" placeholder="Email" name="email" id="mail" size="40">

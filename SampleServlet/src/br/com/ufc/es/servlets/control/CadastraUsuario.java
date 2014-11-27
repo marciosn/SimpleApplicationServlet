@@ -36,9 +36,9 @@ public class CadastraUsuario extends HttpServlet implements Runnable{
     }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		username = request.getParameter("nome");
 		password = request.getParameter("senha");
@@ -51,32 +51,12 @@ public class CadastraUsuario extends HttpServlet implements Runnable{
 		}else{
 			usuario = new Usuario(username, password, email);
 			run();
-			//persistiUsurio(usuario);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("ListaPessoas.jsp");
 			dispatcher.forward(request, response);
 		}
 		
 		System.out.println(username + " " + password + " " + email);
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-	}
-	
-	public void persistiUsurio(Usuario usuario){
-		try {
-			usuarioDAO.beginTransaction();
-			usuarioDAO.save(usuario);
-			usuarioDAO.commit();
-			
-		} catch (Exception e) {
-			usuarioDAO.rollback();
-			e.printStackTrace();
-			System.out.println("Exception durante persistencia "+e.getMessage());
-		}
+		
 	}
 
 	@Override

@@ -1,0 +1,68 @@
+
+/* INICIO STYLE VALIDATE PLUGIN */
+.hide
+{
+    display:none;
+}
+.validate input[type="text"] , .validate input[type="password"]
+{
+    border:1px solid #7A9CBC; /* BORDA */
+    -moz-box-shadow: 0 0 3px #138AE7; /* BORDA */
+    -webkit-box-shadow: 0 0 3px #138AE7;/* BORDA */
+    box-shadow: 0 0 3px #138AE7;  /* BORDA */
+    border-radius:4px;  
+    -moz-border-radius:4px;
+    padding:7px;
+    min-width: 300px; /* COMPRIMENTO DO CAMPO INPUT */
+    color:#333;
+    margin-bottom:5px; 
+	display:block;
+}
+.validate select
+{
+    border:1px solid #7A9CBC; /* BORDA */
+    -moz-box-shadow: 0 0 3px #138AE7; /* BORDA */
+    -webkit-box-shadow: 0 0 3px #138AE7;/* BORDA */
+    box-shadow: 0 0 3px #138AE7;  /* BORDA */
+    border-radius:4px;  
+    -moz-border-radius:4px;
+    padding:7px;
+    min-width: 317px; /* COMPRIMENTO DO CAMPO INPUT */
+    color:#333;
+    margin-bottom:10px; 
+	display:block;
+}
+
+.validate label
+{
+    display: block;
+    padding:6px;
+    padding-left:0px;
+    margin-top:8px; 
+    color:#666;
+}
+.validate .invalid
+{
+    border:1px solid red;
+    -moz-box-shadow: 0 0 3px red;
+    -webkit-box-shadow: 0 0 3px red;
+    box-shadow: 0 0 3px red;  
+    border-radius:4px; 
+    -moz-border-radius:4px;
+    background: url(../images/error.png) no-repeat right;
+
+}
+.validate .valid
+{
+    background: url(../images/success.png) no-repeat right;  
+}
+
+.validate p span
+{
+	border:0px solid red;
+    color:red;
+    font-size: 11px;    
+	display:block;
+}
+
+/* FIM STYLE VALIDATE PLUGIN */
