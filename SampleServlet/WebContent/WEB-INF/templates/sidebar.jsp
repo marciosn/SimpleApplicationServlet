@@ -13,7 +13,7 @@
               <li><a href="./modal.jsp">Modal</a></li>
               <li><a href="./dragdrop.jsp">DragDrop</a></li>
               <li><a href="./formulario.jsp">Formulário</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="./upload.jsp">Upload</a></li>
               <li><a href="#">Link</a></li>
               <li><a href="#">Link</a></li>
             </ul>
