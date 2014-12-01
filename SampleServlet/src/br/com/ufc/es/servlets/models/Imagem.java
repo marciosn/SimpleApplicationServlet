@@ -12,9 +12,9 @@ import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-@Entity
+/*@Entity
 @Table(name = "Imagem")
-@NamedQuery(name = "Imagem.findImagem", query = "from Imagem")
+@NamedQuery(name = "Imagem.findImagem", query = "from Imagem")*/
 public class Imagem implements Serializable{	
 	private static final long serialVersionUID = -923044072385876267L;
 	@Id

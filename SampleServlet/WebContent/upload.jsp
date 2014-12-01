@@ -30,7 +30,7 @@
 <div class="container-fluid form">
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
 			
-		<div class="span6">
+		<div class="span4">
 		<h2>
 			<caption>Upload de imagens</caption>
 		</h2>
@@ -44,6 +44,12 @@
                 <input type="submit" value="Upload it"/>
                 </form>
          </div>
+         
+         <h2>Exibir imagem</h2>
+			<form action="ControladorImagens" method="get"  enctype="multipart/form-data">
+				<input type="text" class="input-block-level required" placeholder="id da imagem.." name="imagem" id="imagem">
+                <button class="btn btn-large btn-inverse" type="submit">Buscar</button>
+            </form>
 		
 <script>
 $(document).ready(function()
@@ -55,38 +61,10 @@ $(document).ready(function()
 	});
 });
 </script>
-		
-		<!-- <span class="btn btn-success fileinput-button">
-	       <i class="glyphicon glyphicon-plus"></i>
-        <span>Add files...</span>
-        <input id="fileupload" type="file" name="files[]" multiple>
-	    </span>
-	    
-	    <button type="submit" class="btn btn-primary start">
-           <i class="icon-upload icon-white"></i>
-               <span>Start upload</span>
-                </button>
-                <button type="reset" class="btn btn-warning cancel">
-                    <i class="icon-remove-circle icon-white"></i>
-                    <span>Cancel upload</span>
-                </button>
-        	       <button type="button" class="btn btn-danger delete">
-                  <i class="icon-trash icon-white"></i>
-                  <span>Delete</span>
-               </button>
-	    <br>
-	    <br>
-	    
-    <div id="progress" class="progress">
-        <div class="progress-bar progress-bar-success"></div>
-    </div>
-    
-    <div id="files" class="files"></div>
-    <br> -->
-
 		</div>
 		
-		<div class="span4">
+		<div class="span3">
+		
    		</div>
 				
 	</div>

@@ -1,10 +1,11 @@
 package br.com.ufc.es.servlets.control;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -18,15 +19,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import javax.servlet.http.Part;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.io.IOUtils;
 
 import br.com.ufc.es.servlets.dao.ImagemJPADAO;
 import br.com.ufc.es.servlets.models.Imagem;
+import br.com.ufc.es.servlets.persistencia.PersistirArquivoBanco;
+import br.com.ufc.es.servlets.persistencia.RecuperarArquivoBanco;
 
 /**
  * Servlet implementation class ControladorImagens
@@ -38,8 +42,10 @@ public class ControladorImagens extends HttpServlet {
 	private List<Imagem> imagens;
 	private ImagemJPADAO imagemDAO;
 	private Imagem imagem;
-	private Part uploadedFile;
 	private File file;
+	private PersistirArquivoBanco persistir = new PersistirArquivoBanco();
+	private RecuperarArquivoBanco recuperar = new RecuperarArquivoBanco();
+	
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -47,6 +53,7 @@ public class ControladorImagens extends HttpServlet {
     public ControladorImagens() {
         super();
         imagens = new ArrayList<Imagem>();
+        
     }
     
     private void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -88,13 +95,20 @@ public class ControladorImagens extends HttpServlet {
 						fileItem = fileItemTemp;
 						
 						try {
-							file = new File(_uploadDir +"/"+ fileItem.getName());
-							System.out.println("AbsolutePath Imagem "+file.getAbsolutePath());
-							System.out.println("PATH DA IMAGEM "+file.getPath());
-							
-							criarImagem(file);
+							 String itemName = fileItemTemp.getName();
+	                         itemName = FilenameUtils.getName(itemName);
+	                         File savedFile = new File(new File(_uploadDir + "/"), itemName);
+	                         fileItemTemp.write(savedFile);
+	                         
+	                         System.out.println("PATH DA IMAGEM "+savedFile.getPath());
+	                         
+							if(persistir.insertFile(savedFile)){
+								System.out.println("SUCESSO !!!!!");
+							}else
+								System.out.println("FALHAAAAAA !!!!!");
 								
 						} catch (Exception e) {
+							e.printStackTrace();
 							System.out.println(e.getMessage());
 						}
 						
@@ -116,22 +130,6 @@ public class ControladorImagens extends HttpServlet {
     	
     }
     
-    private byte[] getBytesFromFile(File file) throws IOException {  
-        InputStream is = null;
-        byte[] ret;
-        try {  
-            long length = file.length();  
-            if (length > MAXLENGTH) throw new IllegalArgumentException ("File is too big");  
-            ret = new byte [(int) length];  
-            is = new FileInputStream (file);  
-            is.read (ret);  
-        } finally {  
-            if (is != null) try { is.close(); } catch (IOException ex) {}  
-        }
-        return ret;  
-    }   
-    
-    
     public void criarImagem(File file){
     	imagem = new Imagem();
     	imagem.setNameImg(file.getName());
@@ -141,7 +139,6 @@ public class ControladorImagens extends HttpServlet {
     	try {
 			persistir(this.imagem);
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
     }
@@ -150,7 +147,23 @@ public class ControladorImagens extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		String idImagem = request.getParameter("imagem");
+		int id = Integer.parseInt(idImagem);
+		
+		System.out.println("ID " + id);
+		
+		try {
+			File arquivo = recuperar.getFile(id);
+			if(!arquivo.equals(null)){
+				System.out.println("Nome do arquivo "+arquivo.getName());
+				System.out.println("Path do arquivo "+arquivo.getPath());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("upload.jsp");
+		dispatcher.forward(request, response);
 	}
 
 	/**
@@ -166,6 +179,28 @@ public class ControladorImagens extends HttpServlet {
 		imagemDAO.save(img);
 		imagemDAO.commit();
 	}
+	
+	/*public File CriaFile(File f) throws IOException{
+		System.out.println("Entrou no metodo criaFile");
+    	String prefix = FilenameUtils.getBaseName(file2.getFileName());
+    	String suffix = FilenameUtils.getExtension(file2.getFileName());
+    	File file = File.createTempFile(prefix + ",", "." + suffix);
+    	
+    	InputStream input = file2.getInputstream();
+    	OutputStream output = new FileOutputStream(file);
+    	
+    	try{
+    		IOUtils.copy(input, output);
+    	}finally{
+    		IOUtils.closeQuietly(output);
+    		IOUtils.closeQuietly(input);
+    	}
+    	System.out.println("Nome do novo file: --->" + file.getName());
+    	System.out.println("Path do novo file: --->" + file.getAbsolutePath());
+    	System.out.println("Path do novo file: --->" + file.getCanonicalPath());
+    	return file;
+    	
+    }*/
 
 }
 

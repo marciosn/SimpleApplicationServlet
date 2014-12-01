@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.datetimepicker.css" />
  
 <script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
+<script src="./resources/bootstrap/js/validaFormulario.js"></script>
 <script src="./resources/bootstrap/js/jquery-ui.js"></script>
 <script src="./resources/bootstrap/js/jquery.form.js"></script>
 
