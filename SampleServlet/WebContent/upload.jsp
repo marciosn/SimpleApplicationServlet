@@ -39,17 +39,24 @@
 		
 		<div id="fileuploader2">
 		<div>Upload</div>
+		
                 <form action="ControladorImagens" method="post"  enctype="multipart/form-data">
                 <input type="file" name="myFile"/><br/>
                 <input type="submit" value="Upload it"/>
                 </form>
          </div>
          
+         <p>${requestScope.erro}</p>
          <h2>Exibir imagem</h2>
+         
 			<form action="ControladorImagens" method="get"  enctype="multipart/form-data">
 				<input type="text" class="input-block-level required" placeholder="id da imagem.." name="imagem" id="imagem">
                 <button class="btn btn-large btn-inverse" type="submit">Buscar</button>
             </form>
+            
+            Path : ${requestScope.img}
+            
+            <img src="${requestScope.img}" alt="name imagem">
 		
 <script>
 $(document).ready(function()

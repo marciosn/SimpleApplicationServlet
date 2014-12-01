@@ -45,6 +45,7 @@ public class ControladorImagens extends HttpServlet {
 	private File file;
 	private PersistirArquivoBanco persistir = new PersistirArquivoBanco();
 	private RecuperarArquivoBanco recuperar = new RecuperarArquivoBanco();
+	String img;
 	
        
     /**
@@ -148,6 +149,9 @@ public class ControladorImagens extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String idImagem = request.getParameter("imagem");
+		
+		if(idImagem != ""){
+		
 		int id = Integer.parseInt(idImagem);
 		
 		System.out.println("ID " + id);
@@ -157,14 +161,22 @@ public class ControladorImagens extends HttpServlet {
 			if(!arquivo.equals(null)){
 				System.out.println("Nome do arquivo "+arquivo.getName());
 				System.out.println("Path do arquivo "+arquivo.getPath());
+				
+				img = arquivo.getPath();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		request.setAttribute("img", img);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("upload.jsp");
+		dispatcher.forward(request, response);
 		
+	}else{
+		request.setAttribute("erro", "O campo É obrigatório!");
 		RequestDispatcher dispatcher = request.getRequestDispatcher("upload.jsp");
 		dispatcher.forward(request, response);
 	}
+}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -180,28 +192,6 @@ public class ControladorImagens extends HttpServlet {
 		imagemDAO.commit();
 	}
 	
-	/*public File CriaFile(File f) throws IOException{
-		System.out.println("Entrou no metodo criaFile");
-    	String prefix = FilenameUtils.getBaseName(file2.getFileName());
-    	String suffix = FilenameUtils.getExtension(file2.getFileName());
-    	File file = File.createTempFile(prefix + ",", "." + suffix);
-    	
-    	InputStream input = file2.getInputstream();
-    	OutputStream output = new FileOutputStream(file);
-    	
-    	try{
-    		IOUtils.copy(input, output);
-    	}finally{
-    		IOUtils.closeQuietly(output);
-    		IOUtils.closeQuietly(input);
-    	}
-    	System.out.println("Nome do novo file: --->" + file.getName());
-    	System.out.println("Path do novo file: --->" + file.getAbsolutePath());
-    	System.out.println("Path do novo file: --->" + file.getCanonicalPath());
-    	return file;
-    	
-    }*/
-
 }
 
 
