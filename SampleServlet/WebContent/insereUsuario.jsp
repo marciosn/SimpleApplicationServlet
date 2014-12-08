@@ -8,7 +8,8 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />	
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.toastmessage.css" />	
 	
 <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
 <script src="./resources/bootstrap/js/bootstrap.js"></script>
@@ -16,6 +17,7 @@
 <script src="./resources/jquery/jquery-ui.js"></script>
 <script src="./resources/jquery/jquery-ui.min.js"></script>
 <script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
+<script src="./resources/bootstrap/plugins/jquery.toastmessage.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -70,11 +72,80 @@ $(document).ready(function(){
     		<div class="clear"></div>
     		<br/>
 			<button class="btn btn-large btn-primary" type="submit">Cadastrar</button>
+			<br/>
+			<a href="javascript:showSuccessToast();">Sucess</a><br/>
+			<a href="javascript:showNoticeToast();">Notice</a><br/>
+			<a href="javascript:showWarningToast();">Warning</a><br/>
+			<a href="javascript:showErrorToast();">Error</a>
 		</form>
 		
 	</div>
 	
 	</div>
 </body>
+
+<script type="text/javascript">
+
+    function showSuccessToast() {
+        $().toastmessage('showSuccessToast', "Success Dialog which is fading away ...");
+    }
+    function showStickySuccessToast() {
+        $().toastmessage('showToast', {
+            text     : 'Success Dialog which is sticky',
+            sticky   : true,
+            position : 'top-right',
+            type     : 'success',
+            closeText: '',
+            close    : function () {
+                console.log("toast is closed ...");
+            }
+        });
+
+    }
+    function showNoticeToast() {
+        $().toastmessage('showNoticeToast', "Notice  Dialog which is fading away ...");
+    }
+    function showStickyNoticeToast() {
+        $().toastmessage('showToast', {
+             text     : 'Notice Dialog which is sticky',
+             sticky   : true,
+             position : 'top-right',
+             type     : 'notice',
+             closeText: '',
+             close    : function () {console.log("toast is closed ...");}
+        });
+    }
+    function showWarningToast() {
+        $().toastmessage('showWarningToast', "Warning Dialog which is fading away ...");
+    }
+    function showStickyWarningToast() {
+        $().toastmessage('showToast', {
+            text     : 'Warning Dialog which is sticky',
+            sticky   : true,
+            position : 'top-right',
+            type     : 'warning',
+            closeText: '',
+            close    : function () {
+                console.log("toast is closed ...");
+            }
+        });
+    }
+    function showErrorToast() {
+        $().toastmessage('showErrorToast', "Error Dialog which is fading away ...");
+    }
+    function showStickyErrorToast() {
+        $().toastmessage('showToast', {
+            text     : 'Error Dialog which is sticky',
+            sticky   : true,
+            position : 'top-right',
+            type     : 'error',
+            closeText: '',
+            close    : function () {
+                console.log("toast is closed ...");
+            }
+        });
+    }
+
+</script>
 
 </html>
