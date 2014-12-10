@@ -126,5 +126,43 @@ function shading(dados){
     $( "#info4" ).css("background-image", 'url('+info4+')');
 }
 
+function circulohover(dados){
+	var wall = dados.wallpapers;
+	
+	var img1 = wall.imagens[0];
+	var img2 = wall.imagens[1];
+	var img3 = wall.imagens[2];
+	var img4 = wall.imagens[3];
+	var img5 = wall.imagens[4];
+	var img6 = wall.imagens[5];
+	
+	$( "#img1" ).css("background-image", 'url('+img1+')');
+    $( "#img2" ).css("background-image", 'url('+img2+')');
+    $( "#img3" ).css("background-image", 'url('+img3+')');
+    $( "#img4" ).css("background-image", 'url('+img4+')');
+    $( "#img5" ).css("background-image", 'url('+img5+')');
+    $( "#img6" ).css("background-image", 'url('+img6+')');
+}
+
+function slidehover(dados){
+	var wall = dados.wallpapers;
+	
+	var img1 = wall.imagens[0];
+	var img2 = wall.imagens[7];
+	var img3 = wall.imagens[3];
+	var img4 = wall.imagens[4];
+	
+	$("#img1").attr("src", img1);
+    $("#img2").attr("src", img2);
+    $("#img3").attr("src", img3);
+    $("#img4").attr("src", img4);
+    $("#img5").attr("src", img5);
+    $("#img6").attr("src", img6);
+    $("#img7").attr("src", img7);
+    $("#img8").attr("src", img8);
+    $("#img9").attr("src", img9);
+    $("#img10").attr("src", img10);
+    
+}
 
 
