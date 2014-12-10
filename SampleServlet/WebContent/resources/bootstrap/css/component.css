@@ -37,6 +37,8 @@ body {
     background: #333;
     font-size: 0.9em;
     font-weight: 300;
+    background: url(../typography/images/origami.jpg) top left;
+    background-size: cover;
 }
 
 a {

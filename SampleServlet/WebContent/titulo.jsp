@@ -4,14 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Clock</title>
+<title>Titulo</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/component.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.flipcountdown.css" />
 
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/typography/css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Sancreek|Raleway:100' rel='stylesheet' type='text/css' />
+<script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
+<script src="./resources/bootstrap/typography/js/jquery.lettering.js"></script>
+<script src="./resources/bootstrap/typography/js/modernizr.custom.79639.js"></script>
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
@@ -22,32 +26,26 @@
 		
 		<div class="span9">
 		
-		<h2>Clock</h2>
-
-		<div><strong>lg</strong>-large</div>
-		<div id="retroclockbox_lg"></div>
-		<div><strong>md</strong>-middle, default</div>
-		<div id="retroclockbox_md"></div>
-		<div><strong>sm</strong>-small</div>
-		<div id="retroclockbox_sm"></div>
-		<div><strong>xs</strong>-Extra small</div>
-		<div id="retroclockbox_xs"></div>
+		<h2>Titulo</h2>
+		
+			<section class="main">
+				
+				<h2 class="cs-text">
+					<span class="cs-text-cut">Márcio</span>
+					<span class="cs-text-mid">Márcio Sn</span>
+					<span class="cs-text-cut">Márcio</span>
+				</h2>
+				
+			</section>
 		
 		</div>
 		
 	</div>
 
 </body>
-<script src="./resources/bootstrap/plugins/jquery.flipcountdown.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.min.js"></script>
-
 <script>
-jQuery(function($){
-	$('#retroclockbox_lg').flipcountdown({size:'lg'});
-	$('#retroclockbox_md').flipcountdown({size:'md'});
-	$('#retroclockbox_sm').flipcountdown({size:'sm'});
-	$('#retroclockbox_xs').flipcountdown({size:'xs'});
-})
-</script>
-
+			$(document).ready(function() {
+				$(".cs-text-cut").lettering('words');
+			});
+		</script>
 </html>
