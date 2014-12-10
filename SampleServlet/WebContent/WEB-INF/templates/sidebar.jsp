@@ -23,6 +23,7 @@
               <li><a href="./linkefeitos.jsp">Link Efeitos</a></li>
               <li><a href="./circlehover.jsp">Circle Hover</a></li>
               <li><a href="./slidehover.jsp">Slide Hover</a></li>
+              <li><a href="./fastslider.jsp">Fast Slider</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

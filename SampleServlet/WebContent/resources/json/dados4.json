@@ -1,0 +1,14 @@
+var dados = {
+        "wallpapers":{
+            "imagens":[
+						"http://i.imgbox.com/2dq0be78.jpg",
+						"http://i.imgbox.com/t5ktrkNP.jpg",
+						"http://i.imgbox.com/mNo0unJN.jpg",
+						"http://i.imgbox.com/83qOM5Lr.jpg",
+						"http://i.imgbox.com/iDZpnSk1.jpg",
+						"http://i.imgbox.com/TlQ54zQx.jpg",
+						"http://i.imgbox.com/9MP5tMjZ.jpg",
+						"http://i.imgbox.com/rEFaGqQ8.jpg"
+					]
+        }
+};

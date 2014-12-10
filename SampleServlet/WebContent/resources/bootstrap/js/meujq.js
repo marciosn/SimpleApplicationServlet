@@ -164,5 +164,26 @@ function slidehover(dados){
     $("#img10").attr("src", img10);
     
 }
-
+function fastslider(dados){
+	var wall = dados.wallpapers;
+	
+	var img1 = wall.imagens[0];
+	var img2 = wall.imagens[1];
+	var img3 = wall.imagens[2];
+	var img4 = wall.imagens[3];
+	var img5 = wall.imagens[4];
+	var img6 = wall.imagens[5];
+	var img7 = wall.imagens[6];
+	var img8 = wall.imagens[7];
+	
+	$("#img1").attr("src", img1);
+    $("#img2").attr("src", img2);
+    $("#img3").attr("src", img3);
+    $("#img4").attr("src", img4);
+    $("#img5").attr("src", img5);
+    $("#img6").attr("src", img6);
+    $("#img7").attr("src", img7);
+    $("#img8").attr("src", img8);
+    
+}
 

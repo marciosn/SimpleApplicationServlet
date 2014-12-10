@@ -38,7 +38,7 @@
 		
 		<!-- para modificar o estilo dos efeitos CSS é preciso apenas modificar o component CS-STYLE-{NUMERO DO ESTILO DESEJADO}
 			 os estilos vão de 1 a 7, feito isso o estilo sera aplicado-->
-			<ul class="grid cs-style-5">
+			<ul class="grid cs-style-3">
 				<li>
 					<figure>
 						<img src="" alt="img01" id="img1"/>
