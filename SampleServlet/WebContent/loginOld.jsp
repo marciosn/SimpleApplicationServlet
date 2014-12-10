@@ -11,8 +11,6 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
 
-<script src="./resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="./resources/bootstrap/js/bootstrap.js"></script>
 <style type="text/css">
       body {
         padding-top: 40px;
@@ -78,4 +76,6 @@
 
 
   </body>
+  <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="./resources/bootstrap/js/bootstrap.js"></script>
 </html>

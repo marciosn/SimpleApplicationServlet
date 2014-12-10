@@ -27,8 +27,11 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOUtils;
 
+import com.google.gson.Gson;
+
 import br.com.ufc.es.servlets.dao.ImagemJPADAO;
 import br.com.ufc.es.servlets.models.Imagem;
+import br.com.ufc.es.servlets.models.Usuario;
 import br.com.ufc.es.servlets.persistencia.PersistirArquivoBanco;
 import br.com.ufc.es.servlets.persistencia.RecuperarArquivoBanco;
 
@@ -130,20 +133,6 @@ public class ControladorImagens extends HttpServlet {
 		dispatcher.forward(request, response);
     	
     }
-    
-    public void criarImagem(File file){
-    	imagem = new Imagem();
-    	imagem.setNameImg(file.getName());
-    	imagem.setImagem(file.getPath().getBytes());
-    	
-    	System.out.println("Nome da nome imagem "+imagem.getNameImg());
-    	try {
-			persistir(this.imagem);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} 
-    }
-    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -167,6 +156,9 @@ public class ControladorImagens extends HttpServlet {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+ 
+		response.getWriter().write(ArrayToJSON(img));
+		
 		request.setAttribute("img", img);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("upload.jsp");
 		dispatcher.forward(request, response);
@@ -185,42 +177,11 @@ public class ControladorImagens extends HttpServlet {
 		process(request, response);
 	}
 	
-	public void persistir( Imagem img) throws FileNotFoundException{
-		System.out.println("iniciando a persistencia da imagem");
-		imagemDAO.beginTransaction();
-		imagemDAO.save(img);
-		imagemDAO.commit();
+	public String ArrayToJSON(String img){
+		String image;
+		Gson gson = new Gson();
+		image = gson.toJson(img);
+		return image;
+		
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

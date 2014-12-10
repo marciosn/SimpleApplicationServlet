@@ -12,8 +12,7 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.remodal.css" />
 
-<script src="./resources/bootstrap/plugins/jquery.min.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.remodal.js"></script>
+
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
@@ -47,4 +46,6 @@
 </div>
 	
 </body>
+<script src="./resources/bootstrap/plugins/jquery.min.js"></script>
+<script src="./resources/bootstrap/plugins/jquery.remodal.js"></script>
 </html>

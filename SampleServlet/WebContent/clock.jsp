@@ -12,18 +12,6 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.flipcountdown.css" />
 
-<script src="./resources/bootstrap/plugins/jquery.flipcountdown.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.min.js"></script>
-
-<script>
-jQuery(function($){
-	$('#retroclockbox_lg').flipcountdown({size:'lg'});
-	$('#retroclockbox_md').flipcountdown({size:'md'});
-	$('#retroclockbox_sm').flipcountdown({size:'sm'});
-	$('#retroclockbox_xs').flipcountdown({size:'xs'});
-})
-</script>
-
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
@@ -50,4 +38,16 @@ jQuery(function($){
 	</div>
 
 </body>
+<script src="./resources/bootstrap/plugins/jquery.flipcountdown.js"></script>
+<script src="./resources/bootstrap/plugins/jquery.min.js"></script>
+
+<script>
+jQuery(function($){
+	$('#retroclockbox_lg').flipcountdown({size:'lg'});
+	$('#retroclockbox_md').flipcountdown({size:'md'});
+	$('#retroclockbox_sm').flipcountdown({size:'sm'});
+	$('#retroclockbox_xs').flipcountdown({size:'xs'});
+})
+</script>
+
 </html>

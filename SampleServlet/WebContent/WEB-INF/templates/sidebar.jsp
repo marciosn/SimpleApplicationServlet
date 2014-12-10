@@ -15,7 +15,9 @@
               <li><a href="./formulario.jsp">Formulário</a></li>
               <li><a href="./upload.jsp">Upload</a></li>
               <li><a href="./mosaico.jsp">Mosaico</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="./3dhover.jsp">3D efeitos</a></li>
+              <li><a href="./captionhover.jsp">Caption Hover</a></li>
+              <li><a href="./3dshading.jsp">3D Shading</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

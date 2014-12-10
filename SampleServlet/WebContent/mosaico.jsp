@@ -12,13 +12,11 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mosaic.css" />
 
-
 <script src="./resources/bootstrap/plugins/jquery.min.js"></script>
 <script src="./resources/bootstrap/js/meujq.js"></script>
 <script src="./resources/bootstrap/plugins/mosaic.1.0.1.js"></script>
 <script src="./resources/bootstrap/plugins/mosaic.1.0.1.min.js"></script>
-<script type="application/javascript" src="./resources/bootstrap/json/dados.json"></script>
-
+<script type="application/javascript" src="./resources/json/dados.json"></script>
 
 </head>
 <body>
@@ -184,4 +182,5 @@
 		    });
 		    
 		</script>
+
 </html>

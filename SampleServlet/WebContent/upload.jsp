@@ -14,14 +14,9 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.fileupload-ui.css" />
 
 <script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
-<!-- <script src="./resources/bootstrap/plugins/jquery.fileupload-image.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.fileupload.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.ui.widget.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.postmessage-transport.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.fileupload-process.js"></script>
-<script src="./resources/bootstrap/plugins/load-image.all.min.js"></script> -->
 <script src="./resources/bootstrap/plugins/jquery.uploadfile.js"></script>
 <script src="./resources/bootstrap/plugins/jquery.uploadfile.min.js"></script>
+<script src="./resources/angular/angular.js"></script>
 
 </head>
 <body>
@@ -30,7 +25,7 @@
 <div class="container-fluid form">
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
 			
-		<div class="span4">
+		<div class="span3">
 		<h2>
 			<caption>Upload de imagens</caption>
 		</h2>
@@ -50,24 +45,17 @@
          <h2>Exibir imagem</h2>
          
 			<form action="ControladorImagens" method="get"  enctype="multipart/form-data">
-				<input type="text" class="input-block-level required" placeholder="id da imagem.." name="imagem" id="imagem">
-                <button class="btn btn-large btn-inverse" type="submit">Buscar</button>
+				<!-- <input type="text" class="input-block-level required" placeholder="id da imagem.." name="imagem" id="imagem"> -->
+				<input type="number" ng-model="id.imagem" class="input-block-level" placeholder="id da imagem.." name="imagem" id="imagem">
+                <button class="btn btn-large btn-inverse" type="submit" onclick="getImage()">Buscar</button>
             </form>
             
             Path : ${requestScope.img}
             
-            <img src="${requestScope.img}" alt="name imagem">
-		
-<script>
-$(document).ready(function()
-{
-	$("#fileuploader2").uploadFile({
-	url:"ControladorImagens",
-	allowedTypes:"png,gif,jpg,jpeg",
-	fileName:"myfile"
-	});
-});
-</script>
+            
+            
+            <img src="http://i.imgbox.com/wyfcXAVY.jpg" id="img"/>
+            
 		</div>
 		
 		<div class="span3">
@@ -77,4 +65,35 @@ $(document).ready(function()
 	</div>
 
 </body>
+
+<script>
+$(document).ready(function(){
+	
+	$("#fileuploader2").uploadFile({
+	url:"ControladorImagens",
+	allowedTypes:"png,gif,jpg,jpeg",
+	fileName:"myfile"
+	});
+});
+</script>
+
+<script>
+function getImage(){
+	$.ajax({
+        type: 'GET',
+        url: 'ControladorImagens',
+        data: dataJson,
+        contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                alert(data);
+        }, 
+        error: function () {
+            alert('deu erro');
+        }
+    });	
+}
+</script>
+
+
 </html>

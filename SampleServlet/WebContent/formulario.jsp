@@ -13,41 +13,6 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.datetimepicker.css" />
  
-<script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
-<script src="./resources/bootstrap/js/validaFormulario.js"></script>
-<script src="./resources/bootstrap/js/jquery-ui.js"></script>
-<script src="./resources/bootstrap/js/jquery.form.js"></script>
-
-
- <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
-
-<script>
-  $(function() {
-    $( "#estado" ).selectmenu();
-  });
-</script>
-
-<script>
-  $(function() {
-    $( document ).tooltip();
-  });
-</script>
-
-<script> 
-        // wait for the DOM to be loaded 
-        $(document).ready(function() { 
-            // bind 'myForm' and provide a simple callback function 
-            $('#formulario').ajaxForm(function() { 
-                alert("Thank you for your comment!"); 
-            }); 
-        }); 
-</script> 
-
-
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
@@ -67,13 +32,13 @@
 		<p>${requestScope.sucesso}</p>
 		
 		<!-- <form action="CadastraUsuario" method="get" id="inserir"> -->
-				<input type="text" class="input-block-level required" placeholder="Nome..."	name="nome" id="nome" size="40">
-				<input type="text" class="input-block-level required" placeholder="Email..." name="email" id="email" size="40">			
-				<input type="text" class="input-block-level required" placeholder="Data de Nascimento..." name="data" id="datepicker"
+				<input type="text" required class="input-block-level required" placeholder="Nome..."	name="nome" id="nome" size="40">
+				<input type="email" ng-model="text" required class="input-block-level required" placeholder="Email..." name="email" id="email" size="40">			
+				<input type="text" required class="input-block-level required" placeholder="Data de Nascimento..." name="data" id="datepicker"
 				  title="Clique para adicionar a data de Nascimento">
-				<input type="text" class="input-block-level required" placeholder="Nome da Mãe..."	name="nomeMae" id="nomeMae" size="40">
-				<input type="text" class="input-block-level required" placeholder="Nome da Pai..."	name="nomePai" id="nomePai" size="40">
-				<input type="text" class="input-block-level required" placeholder="CPF..."	name="cpf" id="cpf" size="11">
+				<input type="text" required class="input-block-level required" placeholder="Nome da Mãe..."	name="nomeMae" id="nomeMae" size="40">
+				<input type="text" required class="input-block-level required" placeholder="Nome da Pai..."	name="nomePai" id="nomePai" size="40">
+				<input type="number" required class="input-block-level required" placeholder="CPF..."	name="cpf" id="cpf" size="11">
 				
 
 		<!-- </form> -->
@@ -115,10 +80,10 @@
     				<br />
     				<br />
     				
-    				<input type="text" class="input-block-level required" placeholder="Endereço..."	name="endereco" id="endereco" size="40">
-					<input type="text" class="input-block-level required" placeholder="Bairro..."	name="bairro" id="bairro" size="40">
-					<input type="text" class="input-block-level required" placeholder="Complemento..."	name="complemento" id="complemento" size="40">
-    				<input type="text" class="input-block-level required" placeholder="CEP..."	name="cep" id="cep" size="20">
+    				<input type="text" required class="input-block-level required" placeholder="Endereço..."	name="endereco" id="endereco" size="40">
+					<input type="text" required class="input-block-level required" placeholder="Bairro..."	name="bairro" id="bairro" size="40">
+					<input type="text" required class="input-block-level required" placeholder="Complemento..."	name="complemento" id="complemento" size="40">
+    				<input type="number" required class="input-block-level required" placeholder="CEP..."	name="cep" id="cep" size="20">
     				
     			</fieldset>
     			</div>
@@ -128,4 +93,39 @@
 
 
 </body>
+<script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
+<script src="./resources/bootstrap/js/validaFormulario.js"></script>
+<script src="./resources/bootstrap/js/jquery-ui.js"></script>
+<script src="./resources/bootstrap/js/jquery.form.js"></script>
+
+<script src="./resources/angular/angular.js"></script>
+
+ <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+
+<script>
+  $(function() {
+    $( "#estado" ).selectmenu();
+  });
+</script>
+
+<script>
+  $(function() {
+    $( document ).tooltip();
+  });
+</script>
+
+<script> 
+        // wait for the DOM to be loaded 
+        $(document).ready(function() { 
+            // bind 'myForm' and provide a simple callback function 
+            $('#formulario').ajaxForm(function() { 
+                alert("Thank you for your comment!"); 
+            }); 
+        }); 
+</script> 
+
 </html>

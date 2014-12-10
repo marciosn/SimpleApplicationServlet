@@ -13,18 +13,6 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.dataTables_themeroller.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/jquery.dataTables.min.css" />
 
-	
-<script src="./resources/bootstrap/js/bootstrap.min.js"></script>
-<script src="./resources/bootstrap/js/bootstrap.js"></script>
-<script src="./resources/jquery/jquery-2.1.1.min.js"></script>
-<script src="./resources/jquery/jquery-ui.js"></script>
-<script src="./resources/jquery/jquery-ui.min.js"></script>
-<script src="./resources/jquery/jput.min.js"></script>
-<script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.dataTables.js"></script>
-<script src="./resources/bootstrap/plugins/jquery.dataTables.min.js"></script>
-
-
 <script type="text/javascript" charset="utf-8">
 $(document).ready(function() {
     $('#usuarios').dataTable( {
@@ -82,4 +70,14 @@ $(document).ready(function() {
 	
 	</div>
 </body>
+
+<script src="./resources/bootstrap/js/bootstrap.min.js"></script>
+<script src="./resources/bootstrap/js/bootstrap.js"></script>
+<script src="./resources/jquery/jquery-2.1.1.min.js"></script>
+<script src="./resources/jquery/jquery-ui.js"></script>
+<script src="./resources/jquery/jquery-ui.min.js"></script>
+<script src="./resources/jquery/jput.min.js"></script>
+<script src="./resources/bootstrap/plugins/pStrength.jquery.js"></script>
+<script src="./resources/bootstrap/plugins/jquery.dataTables.js"></script>
+<script src="./resources/bootstrap/plugins/jquery.dataTables.min.js"></script>
 </html>
