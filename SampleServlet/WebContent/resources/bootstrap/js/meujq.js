@@ -175,6 +175,13 @@ function fastslider(dados){
 	var img6 = wall.imagens[5];
 	var img7 = wall.imagens[6];
 	var img8 = wall.imagens[7];
+	var img9 = wall.imagens[8];
+	var img10 = wall.imagens[9];
+	var img11 = wall.imagens[10];
+	var img12 = wall.imagens[11];
+	var img13 = wall.imagens[12];
+	var img14 = wall.imagens[13];
+	var img15 = wall.imagens[14];
 	
 	$("#img1").attr("src", img1);
     $("#img2").attr("src", img2);
@@ -184,6 +191,13 @@ function fastslider(dados){
     $("#img6").attr("src", img6);
     $("#img7").attr("src", img7);
     $("#img8").attr("src", img8);
+    $("#img9").attr("src", img9);
+    $("#img10").attr("src", img10);
+    $("#img11").attr("src", img11);
+    $("#img12").attr("src", img12);
+    $("#img13").attr("src", img13);
+    $("#img14").attr("src", img14);
+    $("#img15").attr("src", img15);
     
 }
 
