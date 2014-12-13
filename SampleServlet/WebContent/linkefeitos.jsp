@@ -29,9 +29,9 @@
 				
 			<section class="color-1">
 				<nav class="cl-effect-1">
-					<a href="#">Wafture</a>
-					<a href="#">Sumptuous</a>
-					<a href="#">Scintilla</a>
+					<a href="#">Flamengo</a>
+					<a href="#">Flamengo</a>
+					<a href="#">Flamengo</a>
 					<!-- <a href="#">Propinquity</a>
 					<a href="#">Harbinger</a> -->
 				</nav>

@@ -30,6 +30,7 @@
               <!-- <li><a href="./pagestransition.jsp">Pages Transition</a></li> -->
               <li><a href="./borderanimation.jsp">Border Animation</a></li>
               <li><a href="./filtercss.jsp">Filter CSS</a></li>
+              <!-- <li><a href="./loginCustom.jsp">Login Custom</a></li> -->
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
