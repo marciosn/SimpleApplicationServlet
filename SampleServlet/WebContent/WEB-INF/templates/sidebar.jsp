@@ -25,8 +25,11 @@
               <li><a href="./slidehover.jsp">Slide Hover</a></li>
               <li><a href="./fastslider.jsp">Fast Slider</a></li>
               <li><a href="./animationmenu.jsp">Animation Menus</a></li>
+              <li><a href="./animationText.jsp">Animeted Text</a></li>
               <li><a href="./loading.jsp">Loading CSS3</a></li>
-              <li><a href="./pagestransition.jsp">Pages Transition</a></li>
+              <!-- <li><a href="./pagestransition.jsp">Pages Transition</a></li> -->
+              <li><a href="./borderanimation.jsp">Border Animation</a></li>
+              <li><a href="./filtercss.jsp">Filter CSS</a></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

@@ -1,0 +1,16 @@
+var dados = {
+        "wallpapers":{
+            "imagens":[
+						"./resources/bootstrap/filtercss/images/cdz1.jpg",
+						"./resources/bootstrap/filtercss/images/dbz1.jpg",
+						"./resources/bootstrap/filtercss/images/naruto1.jpg",
+						"./resources/bootstrap/filtercss/images/cdz2.jpg",
+						"./resources/bootstrap/filtercss/images/dbz2.jpg",
+						"./resources/bootstrap/filtercss/images/naruto2.jpg",
+						"./resources/bootstrap/filtercss/images/cdz3.jpg",
+						"./resources/bootstrap/filtercss/images/dbz3.jpg",
+						"./resources/bootstrap/filtercss/images/naruto3.jpg"
+
+					]
+        }
+};
