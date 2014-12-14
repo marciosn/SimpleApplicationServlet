@@ -2,7 +2,7 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Menu</li>
-              <li class="active"><a href="#"><i class="icon-user icon-white"></i> User: ${username}</a></li>
+              <li class="active"><a href="#"><i class="icon-user icon-white"></i>User</a></li>
               <!-- <li><a href="./insereUsuario.jsp">Cadastrar Usuário</a></li>
       		  <li><a href="./profile.jsp">Profile</a></li>
 		      <li><a href="./ListaPessoas.jsp">Listar</a></li>
@@ -12,7 +12,7 @@
               <li><a href="./modal.jsp">Modal</a></li>
               <!-- <li><a href="./dragdrop.jsp">DragDrop</a></li> -->
               <li><a href="./formulario.jsp">Formulário</a></li>
-              <li><a href="./upload.jsp">Upload</a></li>
+              <!-- <li><a href="./upload.jsp">Upload</a></li> -->
               <li><a href="./titulo.jsp">Titulo</a></li>
               <li><a href="./mosaico.jsp">Mosaico</a></li>
               <li><a href="./3dhover.jsp">3D efeitos</a></li>
@@ -30,6 +30,7 @@
               <!-- <li><a href="./pagestransition.jsp">Pages Transition</a></li> -->
               <li><a href="./borderanimation.jsp">Border Animation</a></li>
               <li><a href="./filtercss.jsp">Filter CSS</a></li>
+              <li><a href="./dropdown.jsp">Dropdown</a></li>
               <!-- <li><a href="./loginCustom.jsp">Login Custom</a></li> -->
             </ul>
           </div><!--/.well -->

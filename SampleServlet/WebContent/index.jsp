@@ -27,17 +27,21 @@
             <section class="main">
 				
 				<h2 class="cs-text">
-					<span>C</span>
-					<span>o</span>
-					<span>d</span>
+					<span>M</span>
+					<span>a</span>
 					<span>r</span>
+					<span>c</span>
+					<span>i</span>
 					<span>o</span>
-					<span>p</span>
-					<span>s</span>
+					<span>Sn</span>
 					<span></span>
 				</h2>
 				
 			</section>
+			
+			<!-- <form action="Logout" method="post">
+				<input type="submit" value="Logout"/>
+			</form> -->
 			
 		</div>
 		

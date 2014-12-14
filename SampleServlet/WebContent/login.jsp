@@ -4,13 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login 2</title>
+<title>Login</title>
 
 
 <link rel="stylesheet" type="text/css" href="./resources/login/css/animation.css" />
 <link rel="stylesheet" type="text/css" href="./resources/login/css/authenty.css" />
 <link rel="stylesheet" type="text/css" href="./resources/login/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="./resources/login/css/mycss.css" />
 <link rel="stylesheet" type="text/css" href="./resources/login/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="./resources/login/css/orange.css" />
 <link rel="stylesheet" type="text/css" href="./resources/login/css/preview.css" />
@@ -40,7 +39,7 @@
 								<div class="row">
 								  <div class="title" data-animation="fadeInDown" data-animation-delay=".8s">
 									  <h1>Autenticação</h1>
-									  <h5>Authentication made beautiful</h5>
+									  <h5>by Márcio Souza</h5>
 								  </div>
 									<div id="form_1" data-animation="bounceIn">
 										<div class="form-header">
@@ -58,12 +57,12 @@
 										<div class="form-footer">
 											<div class="row">
 												<div class="col-xs-7">
-													<i class="fa fa-unlock-alt"></i>
-													<a href="#password_recovery" id="forgot_from_1">Forgot password?</a>
+													<!-- <i class="fa fa-unlock-alt"></i>
+													<a href="#password_recovery" id="forgot_from_1">Forgot password?</a> -->
 												</div>
 												<div class="col-xs-5">
-													<i class="fa fa-check"></i>
-													<a href="#signup_window" id="signup_from_1">Sign Up</a>
+													<!-- <i class="fa fa-check"></i>
+													<a href="#signup_window" id="signup_from_1">Sign Up</a> -->
 												</div>
 											</div>
 										</div>		
@@ -83,7 +82,7 @@
 <script>
 			(function($) {
 				
-				// get full window size
+				
 				$(window).on('load resize', function(){
 				    var w = $(window).width();
 				    var h = $(window).height();
@@ -91,10 +90,10 @@
 				    $('section').height(h);
 				});		
 
-				// scrollTo plugin
+				
 				$('#signup_from_1').scrollTo({ easing: 'easeInOutQuint', speed: 1500 });				
 				
-				// set focus on input
+				
 				var firstInput = $('section').find('input[type=text], input[type=email]').filter(':visible:first');
         
 				if (firstInput != null) {
@@ -114,7 +113,7 @@
 	      });
 				
 				
-				// animation handler
+				
 				$('[data-animation-delay]').each(function () {
 	          var animationDelay = $(this).data("animation-delay");
 	          $(this).css({

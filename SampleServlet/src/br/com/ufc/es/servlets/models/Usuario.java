@@ -30,6 +30,11 @@ public class Usuario implements Serializable {
 		this.email = email;
 	}
 	
+	public Usuario(String nome, String senha) {
+		this.nome = nome;
+		this.senha = senha;
+	}
+	
 	public Usuario() {
 		// TODO Auto-generated constructor stub
 	}

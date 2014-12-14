@@ -9,8 +9,8 @@
       <li><a href="./login.jsp">Login</a></li>
       <li><a href="./profile.jsp">Profile</a></li>
       <li><a href="./textSequence.jsp">Presentation</a></li>
-      <li><a href="#">${username}</a></li>
-      
+      <%-- <li><a href="#">${username}</a></li> --%>
+      <li><a href="./login.jsp">logout</a></li>
     </ul>
   </div>
   </div>

@@ -5,7 +5,7 @@
 
     <!-- bdweb  -->
     
-	<persistence-unit name="dev" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="dev2" transaction-type="RESOURCE_LOCAL">
 		<properties>
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bdweb" />
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
@@ -19,17 +19,17 @@
 	</persistence-unit>
 	
 	
-    <persistence-unit name="dev2" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="dev" transaction-type="RESOURCE_LOCAL">
     <properties>
-        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/Nuvem"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://104.131.14.84:5432/servlet"/>
+        <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
         <property name="javax.persistence.jdbc.user" value="postgres"/>
-        <property name="javax.persistence.jdbc.password" value="marciosn"/>
-        <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+        <property name="javax.persistence.jdbc.password" value="kp570marcio"/>
         <property name="eclipselink.cache.shared.default" value="false"/>
         <property name="hibernate.hbm2ddl.auto" value="update" />
 		<property name="hibernate.show_sql" value="true" />
 		<property name="hibernate.format_sql" value="true" />
-		<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect"/>
+		<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
     </properties>
 	</persistence-unit>
 	
