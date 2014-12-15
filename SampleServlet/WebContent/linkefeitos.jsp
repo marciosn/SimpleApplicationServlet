@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Creative Link Effects</title>
+<title>Link Effects</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -25,7 +25,7 @@
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />	
 		<div class="span9">
 		
-		<h2>Creative Link Effects</h2>
+		<h2>Link Effects</h2>
 				
 			<section class="color-1">
 				<nav class="cl-effect-1">

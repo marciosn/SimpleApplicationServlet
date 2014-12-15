@@ -588,8 +588,8 @@ a:hover, a:focus {
 }
 
 .container-fluid {
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 	*zoom: 1;
 }
 
@@ -2244,7 +2244,7 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
 }
 
 .icon-list {
-	background-position: -360px -48px;
+	
 }
 
 .icon-indent-left {

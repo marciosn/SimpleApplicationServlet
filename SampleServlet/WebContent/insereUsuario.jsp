@@ -14,12 +14,13 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
+	<jsp:include page="./WEB-INF/templates/sideMenu.jsp" />
+		<button class="menu-button" id="open-button"></button>
+	<div class="container-fluid conteudo">
 	
-	<div class="container-fluid form">
+	<%-- <jsp:include page="./WEB-INF/templates/sidebar.jsp" /> --%>
 	
-	<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
-	
-	<div class="span6">
+	<div class="span7">
 		<h2>
 			<caption>Cadastrar Usuário</caption>
 		</h2>
@@ -152,5 +153,15 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	
+    content = document.querySelector( "#content" ),
+	openbtn = document.querySelector( "#open-button" ),
+	closebtn = document.querySelector( "#close-button" ),
+	
+	sideMenu(content, openbtn, closebtn);
+} );
 
+</script>
 </html>

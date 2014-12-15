@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Icon Hover Effects</title>
+<title>Icon Hover</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -27,7 +27,7 @@
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />	
 		<div class="span9">
 		
-		<h2>Icon Hover Effects</h2>
+		<h2>Icon Hover</h2>
 			<section id="set-1">
 				<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
 					<a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>

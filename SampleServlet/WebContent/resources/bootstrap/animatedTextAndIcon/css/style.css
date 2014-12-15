@@ -3,12 +3,7 @@
 .clr{
 	clear:both;
 }
-.container {
-	width:100%;
-	position:relative;
-	z-index:100;
-	margin:0 auto;
-}
+
 .header{
 	padding-top:40px;
 }

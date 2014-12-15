@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Efeitos 3D hover</title>
+<title>Efeitos 3D</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -12,7 +12,7 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/mycss.css" />
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/3dhover/css/style_common.css" />
-<link rel="stylesheet" type="text/css" href="./resources/bootstrap/3dhover/css/style3.css" />
+<link rel="stylesheet" type="text/css" href="./resources/bootstrap/3dhover/css/style1.css" />
 
 <script type="application/javascript" src="./resources/json/dados.json"></script>
 <script src="./resources/bootstrap/js/meujq.js"></script>
@@ -30,7 +30,7 @@
 		
 		<div class="span9">
 		
-		<h2>Efeitos 3D hover</h2>
+		<h2>Efeitos 3D</h2>
 			<div id="grid" class="main">
 				<div class="view">
 					<div class="view-back">

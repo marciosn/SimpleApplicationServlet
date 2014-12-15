@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Caption Hover Effects</title>
+<title>Caption Hover</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -34,7 +34,7 @@
 		
 		<div class="span9">
 		
-		<h2>Caption Hover Effects</h2>
+		<h2>Caption Hover</h2>
 		
 		<!-- para modificar o estilo dos efeitos CSS é preciso apenas modificar o component CS-STYLE-{NUMERO DO ESTILO DESEJADO}
 			 os estilos vão de 1 a 7, feito isso o estilo sera aplicado-->

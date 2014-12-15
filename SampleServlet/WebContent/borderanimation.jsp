@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>BORDER ANIMATION EFFECT WITH SVG AND CSS</title>
+<title>Border Animattion</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -27,7 +27,7 @@
 		
 		<div class="span9">
 		
-		<h2>BORDER ANIMATION EFFECT WITH SVG AND CSS</h2>
+		<h2>Border Animattion</h2>
 				<section class="demo-1">
 				<div class="grid">
 					<div class="box">

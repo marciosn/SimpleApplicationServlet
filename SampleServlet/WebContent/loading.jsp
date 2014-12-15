@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html">
 <meta charset="UTF-8" />
-<title>Creative Loading Effects</title>
+<title>Loading Effects</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />

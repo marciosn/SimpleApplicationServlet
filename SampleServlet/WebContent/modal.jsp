@@ -16,12 +16,11 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	
 	<div class="container-fluid">
 	
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
 	
-	<div class="remodal-bg span7">
+	<div class="remodal-bg span9">
 		<h2>O conteúdo da página fica nesta div</h2>
 		
 		<p></p>
@@ -46,6 +45,7 @@
 </div>
 	
 </body>
+
 <script src="./resources/bootstrap/plugins/jquery.min.js"></script>
 <script src="./resources/bootstrap/plugins/jquery.remodal.js"></script>
 </html>

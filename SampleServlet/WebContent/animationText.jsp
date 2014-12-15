@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Animated Text and Icon Menu </title>
+<title>Text and Icon</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -29,7 +29,7 @@
 		
 		<div class="span9">
 		
-		<h2>Animated Text and Icon Menu </h2>
+		<h2>Text and Icon</h2>
 				<ul id="sti-menu" class="sti-menu">
 				<li data-hovercolor="#37c5e9">
 					<a href="#">

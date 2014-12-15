@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Web Typography Styles</title>
+<title>Typography</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -22,12 +22,12 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
-	
+
 	<div class="container-fluid">
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />	
 		<div class="span9">
 		
-		<h2>Web Typography Styles</h2>
+		<h2>Typography</h2>
 			<section class="main">
 				
 				<h2 class="cs-text" id="cs-text">ABCD</h2>

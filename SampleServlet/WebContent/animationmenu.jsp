@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Creative CSS3 Animation Menus</title>
+<title>Animation Menus</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -24,7 +24,7 @@
 		
 		<div class="span9">
 		
-		<h2>Creative CSS3 Animation Menus</h2>
+		<h2>Animation Menus</h2>
 				<ul class="ca-menu">
                     <li>
                         <a href="#">

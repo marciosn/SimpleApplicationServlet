@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Fast Hover Slideshow with CSS3</title>
+<title>Fast Hover Slider</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -26,7 +26,7 @@
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />	
 		<div class="span9">
 		
-		<h2>Fast Hover Slideshow with CSS3</h2>
+		<h2>Fast Hover Slider</h2>
 			<section>
 				<div class="hs-wrapper">
 					<img src="" alt="image01" id="img1"/>
@@ -37,15 +37,6 @@
 					<img src="" alt="image06" id="img6"/>
 					<img src="" alt="image07" id="img7"/>
 					<img src="" alt="image08" id="img8"/>
-					
-					<!-- <img src="" alt="image09" id="img9"/>
-					<img src="" alt="image10" id="img10"/>
-					<img src="" alt="image11" id="img11"/>
-					<img src="" alt="image12" id="img12"/>
-					<img src="" alt="image13" id="img13"/>
-					<img src="" alt="image14" id="img14"/>
-					<img src="" alt="image15" id="img15"/> -->
-					
 					<div class="hs-overlay">
 						<span>O Hobbit <strong>2014</strong></span>
 					</div>

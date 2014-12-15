@@ -1,8 +1,18 @@
-body{
+/* body{
 	padding-top: 70px;
 }
 .form{
 	padding-top: 70px;
+} */
+h2{
+	text-align: center;
+}
+.conteudo{
+	padding-left: 60px;	
+}
+.container-fluid{
+	padding-top: 70px;
+	
 }
 .containerMarcio{
 	padding-left: 15px;

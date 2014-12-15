@@ -16,11 +16,11 @@
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
+	<jsp:include page="./WEB-INF/templates/sideMenu.jsp" />
+		<button class="menu-button" id="open-button"></button>
 	
-	
-	
-	<div class="container-fluid form">
-		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />
+	<div class="container-fluid conteudo">
+		<%-- <jsp:include page="./WEB-INF/templates/sidebar.jsp" /> --%>
 		
 		<form action="Formulario" method="post" id="formulario" class="validate">
 		
@@ -96,7 +96,6 @@
 <script src="./resources/bootstrap/js/jquery-1.10.2.js"></script>
 <script src="./resources/bootstrap/js/validaFormulario.js"></script>
 <script src="./resources/bootstrap/js/jquery-ui.js"></script>
-<script src="./resources/bootstrap/js/jquery.form.js"></script>
 
 <script src="./resources/angular/angular.js"></script>
 
@@ -117,15 +116,15 @@
     $( document ).tooltip();
   });
 </script>
+<script type="text/javascript" charset="utf-8">
+$(document).ready(function() {
+	
+    content = document.querySelector( "#content" ),
+	openbtn = document.querySelector( "#open-button" ),
+	closebtn = document.querySelector( "#close-button" ),
+	
+	sideMenu(content, openbtn, closebtn);
+} );
 
-<script> 
-        // wait for the DOM to be loaded 
-        $(document).ready(function() { 
-            // bind 'myForm' and provide a simple callback function 
-            $('#formulario').ajaxForm(function() { 
-                alert("Thank you for your comment!"); 
-            }); 
-        }); 
-</script> 
-
+</script>
 </html>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>HOVER SLIDE EFFECT WITH JQUERY</title>
+<title>Hover Slide</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -39,7 +39,7 @@
 		<jsp:include page="./WEB-INF/templates/sidebar.jsp" />	
 		<div class="span9">
 		
-		<h2>HOVER SLIDE EFFECT WITH JQUERY</h2>
+		<h2>Hover Slide</h2>
 			
 			<div id="hs_container" class="hs_container">
 				<div class="hs_area hs_area1">

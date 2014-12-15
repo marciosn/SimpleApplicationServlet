@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Filter Functionality with CSS3</title>
+<title>Filter CSS</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -29,20 +29,20 @@
 		
 		<div class="span9">
 		
-		<h2>Filter Functionality with CSS3</h2>
+		<h2>Filter CSS</h2>
 				<section class="ff-container">
 			
 				<input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
 				<label for="select-type-all" class="ff-label-type-all">   All</label>
 				
 				<input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
-				<label for="select-type-1" class="ff-label-type-1">   Web Design</label>
+				<label for="select-type-1" class="ff-label-type-1">Type 1</label>
 				
 				<input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
-				<label for="select-type-2" class="ff-label-type-2">   Illustration</label>
+				<label for="select-type-2" class="ff-label-type-2">Type 2</label>
 				
 				<input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3" />
-				<label for="select-type-3" class="ff-label-type-3">   Icon Design</label>
+				<label for="select-type-3" class="ff-label-type-3">Type 3</label>
 				
 				<div class="clr"></div>
 				

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>3D Shading with Box-Shadows</title>
+<title>3D Box</title>
 
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/css/bootstrap-responsive.css" />
@@ -30,7 +30,7 @@
 		
 		<div class="span9">
 		
-		<h2>3D Shading with Box-Shadows</h2>
+		<h2>3D Boxs</h2>
 				<div class="wrapper">
 				<ul class="stage clearfix">
 
