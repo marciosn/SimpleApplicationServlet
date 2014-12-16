@@ -10,6 +10,8 @@
               <li><a href="./captionhover.jsp">Caption Hover</a></li>
               <li><a href="./circlehover.jsp">Circle Hover</a></li>
               <li><a href="./dropdown.jsp">Dropdown</a></li>
+              <li><a href="./ideas1.jsp">Efeitos Hover 1</a></li>
+              <li><a href="./ideas2.jsp">Efeitos Hover 2</a></li>
               <li><a href="./fastslider.jsp">Fast Slider</a></li>
               <li><a href="./iconhover.jsp">Icon Hover</a></li>
               <li><a href="./linkefeitos.jsp">Link Efeitos</a></li>
@@ -18,7 +20,7 @@
               <li><a href="./titulo.jsp">Titulo</a></li>
               <li><a href="./mosaico.jsp">Mosaico</a></li>
               <li><a href="./slidehover.jsp">Slide Hover</a></li>
-              <li><a href="./typography.jsp">Typography</a></li>              
+              <li><a href="./typography.jsp">Typography</a></li>
             </ul>
           </div>
         </div>

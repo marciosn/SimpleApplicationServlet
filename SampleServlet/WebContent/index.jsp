@@ -15,11 +15,6 @@
 <link rel="stylesheet" type="text/css" href="./resources/bootstrap/typography/css/style7.css" />
 <script src="./resources/bootstrap/typography/js/jquery.lettering.js"></script>
 <script src="./resources/bootstrap/typography/js/modernizr.custom.79639.js"></script>
-
-<style type="text/css">
-	
-</style>
-
 </head>
 <body>
 	<jsp:include page="./WEB-INF/templates/barra_menu.jsp" />
