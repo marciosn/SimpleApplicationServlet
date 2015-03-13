@@ -10,7 +10,7 @@
 			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/bdweb" />
 			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
 			<property name="javax.persistence.jdbc.user" value="postgres" />
-			<property name="javax.persistence.jdbc.password" value="marciosn" />
+			<property name="javax.persistence.jdbc.password" value="*******" />
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
@@ -24,7 +24,7 @@
         <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://104.131.14.84:5432/servlet"/>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
         <property name="javax.persistence.jdbc.user" value="postgres"/>
-        <property name="javax.persistence.jdbc.password" value="kp570marcio"/>
+        <property name="javax.persistence.jdbc.password" value="*******"/>
         <property name="eclipselink.cache.shared.default" value="false"/>
         <property name="hibernate.hbm2ddl.auto" value="update" />
 		<property name="hibernate.show_sql" value="true" />
